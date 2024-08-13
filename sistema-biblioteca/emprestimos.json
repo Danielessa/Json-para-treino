@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "livro_id": 1,
+        "usuario_id": 2,
+        "data_emprestimo": "2024-08-01",
+        "data_devolucao_prevista": "2024-09-01",
+        "data_devolucao": null
+    },
+    {
+        "id": 2,
+        "livro_id": 3,
+        "usuario_id": 3,
+        "data_emprestimo": "2024-07-10",
+        "data_devolucao_prevista": "2024-08-10",
+        "data_devolucao": "2024-08-08"
+    }
+]

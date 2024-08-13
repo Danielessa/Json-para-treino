@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "titulo": "Python para Iniciantes",
+        "autor": "John Doe",
+        "ano_publicacao": 2020,
+        "disponivel": true,
+        "genero": "Tecnologia",
+        "exemplares": 3
+    },
+    {
+        "id": 2,
+        "titulo": "Algoritmos Avan\u00e7ados",
+        "autor": "Jane Smith",
+        "ano_publicacao": 2018,
+        "disponivel": false,
+        "genero": "Tecnologia",
+        "exemplares": 2
+    },
+    {
+        "id": 3,
+        "titulo": "Hist\u00f3ria do Brasil",
+        "autor": "Pedro Silva",
+        "ano_publicacao": 2015,
+        "disponivel": true,
+        "genero": "Hist\u00f3ria",
+        "exemplares": 5
+    },
+    {
+        "id": 4,
+        "titulo": "Engenharia de Software",
+        "autor": "Andrew Tanenbaum",
+        "ano_publicacao": 2017,
+        "disponivel": false,
+        "genero": "Tecnologia",
+        "exemplares": 4
+    }
+]
