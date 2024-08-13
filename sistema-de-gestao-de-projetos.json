@@ -1,0 +1,108 @@
+
+{
+    "projetos": [
+        {
+            "id": 1,
+            "nome": "Desenvolvimento de Website",
+            "descricao": "Projeto para criar um novo website institucional.",
+            "status": "em andamento",
+            "data_inicio": "2024-06-01",
+            "data_fim_prevista": "2024-09-01",
+            "responsavel": {
+                "nome": "Lucas Martins",
+                "email": "lucas.martins@example.com"
+            },
+            "equipe": [
+                {"nome": "João Silva", "funcao": "Desenvolvedor"},
+                {"nome": "Maria Oliveira", "funcao": "Designer"}
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Sistema de CRM",
+            "descricao": "Implementação de um sistema de gerenciamento de relacionamento com clientes.",
+            "status": "concluído",
+            "data_inicio": "2024-03-01",
+            "data_fim_prevista": "2024-06-01",
+            "responsavel": {
+                "nome": "Ana Lima",
+                "email": "ana.lima@example.com"
+            },
+            "equipe": [
+                {"nome": "Carlos Pereira", "funcao": "Analista"},
+                {"nome": "Fernanda Souza", "funcao": "Desenvolvedor"}
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Aplicativo Mobile",
+            "descricao": "Desenvolvimento de um aplicativo mobile para o gerenciamento de tarefas.",
+            "status": "planejado",
+            "data_inicio": "2024-09-01",
+            "data_fim_prevista": "2024-12-01",
+            "responsavel": {
+                "nome": "Bruno Alves",
+                "email": "bruno.alves@example.com"
+            },
+            "equipe": [
+                {"nome": "Lucas Martins", "funcao": "Desenvolvedor"},
+                {"nome": "Joana Silva", "funcao": "UX Designer"}
+            ]
+        }
+    ],
+    "tarefas": [
+        {
+            "id": 1,
+            "projeto_id": 1,
+            "descricao": "Criar layout inicial",
+            "responsavel": "Designer",
+            "status": "concluída",
+            "data_inicio": "2024-06-05",
+            "data_fim": "2024-06-10"
+        },
+        {
+            "id": 2,
+            "projeto_id": 1,
+            "descricao": "Implementar backend",
+            "responsavel": "Desenvolvedor",
+            "status": "em andamento",
+            "data_inicio": "2024-06-15",
+            "data_fim": "2024-07-01"
+        },
+        {
+            "id": 3,
+            "projeto_id": 2,
+            "descricao": "Realizar testes",
+            "responsavel": "Analista",
+            "status": "concluída",
+            "data_inicio": "2024-05-01",
+            "data_fim": "2024-05-15"
+        }
+    ],
+    "equipes": [
+        {
+            "id": 1,
+            "nome": "Equipe Web",
+            "membros": [
+                {"nome": "João Silva", "funcao": "Desenvolvedor"},
+                {"nome": "Maria Oliveira", "funcao": "Designer"}
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Equipe CRM",
+            "membros": [
+                {"nome": "Carlos Pereira", "funcao": "Analista"},
+                {"nome": "Fernanda Souza", "funcao": "Desenvolvedor"}
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Equipe Mobile",
+            "membros": [
+                {"nome": "Bruno Alves", "funcao": "Desenvolvedor"},
+                {"nome": "Joana Silva", "funcao": "UX Designer"}
+            ]
+        }
+    ]
+}

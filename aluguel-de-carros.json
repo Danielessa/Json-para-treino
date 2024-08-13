@@ -1,0 +1,126 @@
+
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Eduardo Silva",
+            "cnh": "123456789",
+            "endereco": "Rua A, 123",
+            "telefone": "(11) 91234-5678",
+            "email": "eduardo.silva@example.com",
+            "historico_locacoes": [
+                {
+                    "veiculo_id": 1,
+                    "data_inicio": "2024-07-01",
+                    "data_fim": "2024-07-10",
+                    "valor_total": 500.00
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Ana Paula Santos",
+            "cnh": "987654321",
+            "endereco": "Avenida B, 456",
+            "telefone": "(21) 98765-4321",
+            "email": "ana.santos@example.com",
+            "historico_locacoes": [
+                {
+                    "veiculo_id": 2,
+                    "data_inicio": "2024-06-15",
+                    "data_fim": "2024-06-20",
+                    "valor_total": 600.00
+                },
+                {
+                    "veiculo_id": 3,
+                    "data_inicio": "2024-08-01",
+                    "data_fim": "2024-08-05",
+                    "valor_total": 800.00
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Carlos Pereira",
+            "cnh": "192837465",
+            "endereco": "Praça C, 789",
+            "telefone": "(31) 99876-5432",
+            "email": "carlos.pereira@example.com",
+            "historico_locacoes": [
+                {
+                    "veiculo_id": 4,
+                    "data_inicio": "2024-07-20",
+                    "data_fim": "2024-07-25",
+                    "valor_total": 700.00
+                }
+            ]
+        }
+    ],
+    "veiculos": [
+        {
+            "id": 1,
+            "marca": "Fiat",
+            "modelo": "Uno",
+            "ano": 2021,
+            "disponivel": true,
+            "placa": "ABC-1234",
+            "valor_diaria": 50.00
+        },
+        {
+            "id": 2,
+            "marca": "Chevrolet",
+            "modelo": "Onix",
+            "ano": 2022,
+            "disponivel": false,
+            "placa": "XYZ-5678",
+            "valor_diaria": 60.00
+        },
+        {
+            "id": 3,
+            "marca": "Volkswagen",
+            "modelo": "Gol",
+            "ano": 2020,
+            "disponivel": true,
+            "placa": "QWE-1122",
+            "valor_diaria": 70.00
+        },
+        {
+            "id": 4,
+            "marca": "Ford",
+            "modelo": "Ka",
+            "ano": 2019,
+            "disponivel": false,
+            "placa": "RTY-3344",
+            "valor_diaria": 80.00
+        }
+    ],
+    "locacoes": [
+        {
+            "id": 1,
+            "cliente_id": 1,
+            "veiculo_id": 1,
+            "data_inicio": "2024-08-10",
+            "data_fim": "2024-08-15",
+            "valor_total": 250.00,
+            "status": "confirmada"
+        },
+        {
+            "id": 2,
+            "cliente_id": 2,
+            "veiculo_id": 3,
+            "data_inicio": "2024-08-05",
+            "data_fim": "2024-08-10",
+            "valor_total": 350.00,
+            "status": "confirmada"
+        },
+        {
+            "id": 3,
+            "cliente_id": 3,
+            "veiculo_id": 4,
+            "data_inicio": "2024-08-12",
+            "data_fim": "2024-08-18",
+            "valor_total": 480.00,
+            "status": "pendente"
+        }
+    ]
+}

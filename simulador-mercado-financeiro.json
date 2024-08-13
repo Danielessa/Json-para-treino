@@ -1,0 +1,106 @@
+{
+    "acoes": [
+        {
+            "ticker": "AAPL",
+            "empresa": "Apple Inc.",
+            "preco_atual": 150.00,
+            "quantidade_disponivel": 1000,
+            "variacao_dia": 1.2,
+            "volume": 500000
+        },
+        {
+            "ticker": "GOOGL",
+            "empresa": "Alphabet Inc.",
+            "preco_atual": 2800.00,
+            "quantidade_disponivel": 500,
+            "variacao_dia": -0.8,
+            "volume": 300000
+        },
+        {
+            "ticker": "AMZN",
+            "empresa": "Amazon Inc.",
+            "preco_atual": 3500.00,
+            "quantidade_disponivel": 800,
+            "variacao_dia": 2.0,
+            "volume": 600000
+        },
+        {
+            "ticker": "TSLA",
+            "empresa": "Tesla Inc.",
+            "preco_atual": 700.00,
+            "quantidade_disponivel": 1500,
+            "variacao_dia": -1.5,
+            "volume": 700000
+        }
+    ],
+    "contas": [
+        {
+            "id": 1,
+            "titular": "Roberto Farias",
+            "saldo": 50000.00,
+            "portifolio": [
+                {"ticker": "AAPL", "quantidade": 10},
+                {"ticker": "TSLA", "quantidade": 5}
+            ],
+            "historico_transacoes": [
+                {
+                    "ticker": "AAPL",
+                    "quantidade": 10,
+                    "tipo": "compra",
+                    "preco": 150.00,
+                    "data": "2024-08-11"
+                },
+                {
+                    "ticker": "TSLA",
+                    "quantidade": 5,
+                    "tipo": "compra",
+                    "preco": 700.00,
+                    "data": "2024-08-12"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "titular": "Sofia Mendes",
+            "saldo": 75000.00,
+            "portifolio": [
+                {"ticker": "GOOGL", "quantidade": 5},
+                {"ticker": "AMZN", "quantidade": 2}
+            ],
+            "historico_transacoes": [
+                {
+                    "ticker": "GOOGL",
+                    "quantidade": 5,
+                    "tipo": "venda",
+                    "preco": 2800.00,
+                    "data": "2024-08-10"
+                },
+                {
+                    "ticker": "AMZN",
+                    "quantidade": 2,
+                    "tipo": "compra",
+                    "preco": 3500.00,
+                    "data": "2024-08-12"
+                }
+            ]
+        }
+    ],
+    "transacoes": [
+        {
+            "conta_id": 1,
+            "ticker": "AAPL",
+            "quantidade": 10,
+            "tipo": "compra",
+            "preco": 150.00,
+            "data": "2024-08-11"
+        },
+        {
+            "conta_id": 2,
+            "ticker": "GOOGL",
+            "quantidade": 5,
+            "tipo": "venda",
+            "preco": 2800.00,
+            "data": "2024-08-10"
+        }
+    ]
+}

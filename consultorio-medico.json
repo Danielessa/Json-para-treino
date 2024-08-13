@@ -1,0 +1,129 @@
+{
+    "medicos": [
+        {
+            "id": 1,
+            "nome": "Dr. André",
+            "especialidade": "Cardiologia",
+            "crm": "123456-SP",
+            "horarios_atendimento": [
+                {"dia_semana": "segunda-feira", "horario_inicio": "08:00", "horario_fim": "12:00"},
+                {"dia_semana": "quarta-feira", "horario_inicio": "14:00", "horario_fim": "18:00"}
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Dra. Fernanda",
+            "especialidade": "Dermatologia",
+            "crm": "654321-RJ",
+            "horarios_atendimento": [
+                {"dia_semana": "terça-feira", "horario_inicio": "08:00", "horario_fim": "12:00"},
+
+
+                {"dia_semana": "quinta-feira", "horario_inicio": "14:00", "horario_fim": "18:00"}
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Dr. João",
+            "especialidade": "Pediatria",
+            "crm": "789012-MG",
+            "horarios_atendimento": [
+                {"dia_semana": "segunda-feira", "horario_inicio": "14:00", "horario_fim": "18:00"},
+                {"dia_semana": "quarta-feira", "horario_inicio": "08:00", "horario_fim": "12:00"}
+            ]
+        }
+    ],
+    "pacientes": [
+        {
+            "id": 1,
+            "nome": "Carlos Pereira",
+            "data_nascimento": "1990-05-20",
+            "historico_medico": [
+                {
+                    "data": "2024-07-10",
+                    "diagnostico": "Hipertensão",
+                    "medico_id": 1,
+                    "tratamento": "Uso contínuo de anti-hipertensivos"
+                },
+                {
+                    "data": "2024-08-05",
+                    "diagnostico": "Gripe",
+                    "medico_id": 3,
+                    "tratamento": "Repouso e hidratação"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Mariana Lima",
+            "data_nascimento": "1985-09-15",
+            "historico_medico": [
+                {
+                    "data": "2024-08-05",
+                    "diagnostico": "Alergia",
+                    "medico_id": 2,
+                    "tratamento": "Uso de antialérgicos"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Lucas Oliveira",
+            "data_nascimento": "2000-11-30",
+            "historico_medico": [
+                {
+                    "data": "2024-07-20",
+                    "diagnostico": "Asma",
+                    "medico_id": 1,
+                    "tratamento": "Inalação diária"
+                }
+            ]
+        }
+    ],
+    "consultas": [
+        {
+            "id": 1,
+            "paciente_id": 1,
+            "medico_id": 1,
+            "data": "2024-08-15",
+            "hora": "09:00",
+            "status": "confirmada"
+        },
+        {
+            "id": 2,
+            "paciente_id": 2,
+            "medico_id": 2,
+            "data": "2024-08-16",
+            "hora": "10:00",
+            "status": "confirmada"
+        },
+        {
+            "id": 3,
+            "paciente_id": 3,
+            "medico_id": 3,
+            "data": "2024-08-17",
+            "hora": "11:00",
+            "status": "pendente"
+        }
+    ],
+    "exames": [
+        {
+            "id": 1,
+            "paciente_id": 1,
+            "tipo_exame": "Eletrocardiograma",
+            "data_solicitacao": "2024-07-12",
+            "data_resultado": "2024-07-15",
+            "resultado": "Normal",
+            "medico_id": 1
+        },
+        {
+            "id": 2,
+            "paciente_id": 2,
+            "tipo_exame": "Teste alérgico",
+            "data_solicitacao": "2024-08-06",
+            "data_resultado": "2024-08-08",
+            "resultado": "Positivo para pólen",
+            "medico_id": 2
+        }
+    ]
+}

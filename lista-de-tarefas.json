@@ -1,0 +1,63 @@
+{
+    "tarefas": [
+        {
+            "id": 1,
+            "descricao": "Estudar para o exame de matemática",
+            "prioridade": "alta",
+            "concluida": false,
+            "data_limite": "2024-08-20",
+            "subtarefas": [
+                {"id": 1, "descricao": "Revisar álgebra", "concluida": false},
+                {"id": 2, "descricao": "Resolver exercícios", "concluida": false}
+            ]
+        },
+        {
+            "id": 2,
+            "descricao": "Comprar presentes de aniversário",
+            "prioridade": "média",
+            "concluida": true,
+            "data_limite": "2024-08-15",
+            "subtarefas": [
+                {"id": 3, "descricao": "Escolher presentes", "concluida": true},
+                {"id": 4, "descricao": "Comprar embrulho", "concluida": true}
+            ]
+        },
+        {
+            "id": 3,
+            "descricao": "Finalizar projeto de trabalho",
+            "prioridade": "alta",
+            "concluida": false,
+            "data_limite": "2024-08-25",
+            "subtarefas": [
+                {"id": 5, "descricao": "Escrever relatório final", "concluida": false},
+                {"id": 6, "descricao": "Preparar apresentação", "concluida": false}
+            ]
+        }
+    ],
+    "listas": [
+        {
+            "id": 1,
+            "nome": "Estudos",
+            "tarefas": [1, 3]
+        },
+        {
+            "id": 2,
+            "nome": "Compras",
+            "tarefas": [2]
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "João Silva",
+            "email": "joao.silva@example.com",
+            "listas": [1]
+        },
+        {
+            "id": 2,
+            "nome": "Maria Oliveira",
+            "email": "maria.oliveira@example.com",
+            "listas": [2]
+        }
+    ]
+}

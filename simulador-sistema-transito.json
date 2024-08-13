@@ -1,0 +1,106 @@
+{
+    "veiculos": [
+        {
+            "id": 1,
+            "tipo": "carro",
+            "modelo": "Sedan",
+            "placa": "ABC-1234",
+            "velocidade": 60,
+            "localizacao": {
+                "latitude": -23.5505,
+                "longitude": -46.6333
+            },
+            "status": "em movimento"
+        },
+        {
+            "id": 2,
+            "tipo": "moto",
+            "modelo": "Esportiva",
+            "placa": "XYZ-5678",
+            "velocidade": 80,
+            "localizacao": {
+                "latitude": -23.5508,
+                "longitude": -46.6340
+            },
+            "status": "em movimento"
+        },
+        {
+            "id": 3,
+            "tipo": "onibus",
+            "modelo": "Ônibus Urbano",
+            "placa": "QWE-1122",
+            "velocidade": 40,
+            "localizacao": {
+                "latitude": -23.5510,
+                "longitude": -46.6350
+            },
+            "status": "parado"
+        },
+        {
+            "id": 4,
+            "tipo": "caminhao",
+            "modelo": "Caminhão Baú",
+            "placa": "RTY-3344",
+            "velocidade": 50,
+            "localizacao": {
+                "latitude": -23.5520,
+                "longitude": -46.6360
+            },
+            "status": "em movimento"
+        }
+    ],
+    "semaforos": [
+        {
+            "id": 1,
+            "localizacao": "Avenida Central",
+            "estado": "vermelho",
+            "tempo_restante": 30,
+            "coordenadas": {
+                "latitude": -23.5505,
+                "longitude": -46.6333
+            }
+        },
+        {
+            "id": 2,
+            "localizacao": "Rua das Flores",
+            "estado": "verde",
+            "tempo_restante": 20,
+            "coordenadas": {
+                "latitude": -23.5508,
+                "longitude": -46.6340
+            }
+        },
+        {
+            "id": 3,
+            "localizacao": "Praça da Liberdade",
+            "estado": "amarelo",
+            "tempo_restante": 10,
+            "coordenadas": {
+                "latitude": -23.5510,
+                "longitude": -46.6350
+            }
+        }
+    ],
+    "ocorrencias": [
+        {
+            "id": 1,
+            "tipo": "acidente",
+            "localizacao": {
+                "latitude": -23.5505,
+                "longitude": -46.6333
+            },
+            "descricao": "Colisão entre carro e moto",
+            "data_hora": "2024-08-10T14:30:00"
+        },
+        {
+            "id": 2,
+            "tipo": "pane",
+            "localizacao": {
+                "latitude": -23.5510,
+                "longitude": -46.6350
+            },
+            "descricao": "Pane elétrica em ônibus",
+            "data_hora": "2024-08-10T15:00:00"
+        }
+    ]
+}

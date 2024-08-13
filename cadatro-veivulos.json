@@ -1,0 +1,90 @@
+{
+    "veiculos": [
+        {
+            "id": 1,
+            "tipo": "carro",
+            "marca": "Toyota",
+            "modelo": "Corolla",
+            "ano": 2020,
+            "placa": "ABC-1234",
+            "proprietario": {
+                "nome": "João da Silva",
+                "documento": "12345678900",
+                "endereco": "Rua A, 123"
+            }
+        },
+        {
+            "id": 2,
+            "tipo": "moto",
+            "marca": "Honda",
+            "modelo": "CBR",
+            "ano": 2019,
+            "placa": "XYZ-5678",
+            "proprietario": {
+                "nome": "Maria de Souza",
+                "documento": "98765432100",
+                "endereco": "Avenida B, 456"
+            }
+        },
+        {
+            "id": 3,
+            "tipo": "caminhao",
+            "marca": "Volvo",
+            "modelo": "FH",
+            "ano": 2018,
+            "placa": "RTY-3344",
+            "proprietario": {
+                "nome": "Carlos Pereira",
+                "documento": "19283746500",
+                "endereco": "Praça C, 789"
+            }
+        },
+        {
+            "id": 4,
+            "tipo": "carro",
+            "marca": "Ford",
+            "modelo": "Fusion",
+            "ano": 2021,
+            "placa": "QWE-1122",
+            "proprietario": {
+                "nome": "Ana Lima",
+                "documento": "00123456789",
+                "endereco": "Rua D, 321"
+            }
+        }
+    ],
+    "historico_transferencias": [
+        {
+            "veiculo_id": 1,
+            "vendedor": {
+                "nome": "José
+
+ Oliveira",
+                "documento": "11223344556",
+                "endereco": "Rua E, 654"
+            },
+            "comprador": {
+                "nome": "João da Silva",
+                "documento": "12345678900",
+                "endereco": "Rua A, 123"
+            },
+            "data": "2024-01-10",
+            "valor": 60000.00
+        },
+        {
+            "veiculo_id": 2,
+            "vendedor": {
+                "nome": "Paulo Ribeiro",
+                "documento": "22334455667",
+                "endereco": "Avenida F, 987"
+            },
+            "comprador": {
+                "nome": "Maria de Souza",
+                "documento": "98765432100",
+                "endereco": "Avenida B, 456"
+            },
+            "data": "2023-12-15",
+            "valor": 45000.00
+        }
+    ]
+}

@@ -1,0 +1,90 @@
+{
+    "eleitores": [
+        {
+            "id": 1,
+            "nome": "Lucas Oliveira",
+            "votou": false,
+            "zona_eleitoral": "101",
+            "secao_eleitoral": "20"
+        },
+        {
+            "id": 2,
+            "nome": "Mariana Costa",
+            "votou": true,
+            "zona_eleitoral": "101",
+            "secao_eleitoral": "20"
+        },
+        {
+            "id": 3,
+            "nome": "Carlos Mendes",
+            "votou": false,
+            "zona_eleitoral": "102",
+            "secao_eleitoral": "15"
+        },
+        {
+            "id": 4,
+            "nome": "Ana Paula Silva",
+            "votou": false,
+            "zona_eleitoral": "102",
+            "secao_eleitoral": "15"
+        }
+    ],
+    "candidatos": [
+        {
+            "id": 1,
+            "nome": "Candidato A",
+            "partido": "Partido X",
+            "numero": "10",
+            "propostas": [
+                "Educação para todos",
+                "Mais empregos"
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Candidato B",
+            "partido": "Partido Y",
+            "numero": "20",
+            "propostas": [
+                "Saúde de qualidade",
+                "Redução de impostos"
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Candidato C",
+            "partido": "Partido Z",
+            "numero": "30",
+            "propostas": [
+                "Segurança pública",
+                "Investimento em infraestrutura"
+            ]
+        }
+    ],
+    "eleicao": {
+        "ano": 2024,
+        "tipo": "presidencial",
+        "turno": 1,
+        "data": "2024-10-02"
+    },
+    "votos": [
+        {
+            "id": 1,
+            "eleitor_id": 2,
+            "candidato_id": 1,
+            "data_hora": "2024-10-02T09:00:00"
+        },
+        {
+            "id": 2,
+            "eleitor_id": 4,
+            "candidato_id": 2,
+            "data_hora": "2024-10-02T10:00:00"
+        },
+        {
+            "id": 3,
+            "eleitor_id": 3,
+            "candidato_id": 3,
+            "data_hora": "2024-10-02T11:00:00"
+        }
+    ]
+}

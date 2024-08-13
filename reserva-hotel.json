@@ -1,0 +1,96 @@
+{
+    "quartos": [
+        {
+            "numero": 101,
+            "tipo": "solteiro",
+            "preco": 100.00,
+            "disponivel": true,
+            "facilidades": ["Wi-Fi", "Ar-condicionado", "TV a cabo"],
+            "reservas": []
+        },
+        {
+            "numero": 102,
+            "tipo": "casal",
+            "preco": 150.00,
+            "disponivel": false,
+            "facilidades": ["Wi-Fi", "Ar-condicionado", "Frigobar"],
+            "reservas": [
+                {
+                    "id": 1,
+                    "cliente_id": 1,
+                    "data_checkin": "2024-08-10",
+                    "data_checkout": "2024-08-15"
+                }
+            ]
+        },
+        {
+            "numero": 103,
+            "tipo": "suite",
+            "preco": 300.00,
+            "disponivel": true,
+            "facilidades": ["Wi-Fi", "Ar-condicionado", "Jacuzzi", "Varanda"],
+            "reservas": []
+        },
+        {
+            "numero": 104,
+            "tipo": "quarto familiar",
+            "preco": 200.00,
+            "disponivel": true,
+            "facilidades": ["Wi-Fi", "Ar-condicionado", "TV a cabo", "Frigobar"],
+            "reservas": []
+        }
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Fernanda Lima",
+            "documento": "123456789",
+            "telefone": "(11) 99876-5432",
+            "email": "fernanda.lima@example.com",
+            "historico_reservas": [
+                {
+                    "numero_quarto": 102,
+                    "data_checkin": "2024-08-10",
+                    "data_checkout": "2024-08-15"
+                },
+                {
+                    "numero_quarto": 103,
+                    "data_checkin": "2024-05-01",
+                    "data_checkout": "2024-05-03"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Marcelo Nunes",
+            "documento": "987654321",
+            "telefone": "(21) 91234-5678",
+            "email": "marcelo.nunes@example.com",
+            "historico_reservas": [
+                {
+                    "numero_quarto": 101,
+                    "data_checkin": "2024-07-20",
+                    "data_checkout": "2024-07-22"
+                }
+            ]
+        }
+    ],
+    "reservas": [
+        {
+            "id": 1,
+            "cliente_id": 1,
+            "numero_quarto": 102,
+            "data_checkin": "2024-08-10",
+            "data_checkout": "2024-08-15",
+            "valor_total": 750.00
+        },
+        {
+            "id": 2,
+            "cliente_id": 2,
+            "numero_quarto": 101,
+            "data_checkin": "2024-07-20",
+            "data_checkout": "2024-07-22",
+            "valor_total": 200.00
+        }
+    ]
+}

@@ -1,0 +1,117 @@
+{
+    "contas": [
+        {
+            "numero_conta": "00123456",
+            "titular": "Rafael Santos",
+            "saldo": 1500.50,
+            "tipo": "corrente",
+            "limite_credito": 2000.00,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "saque",
+                    "valor": 200.00,
+                    "data": "2024-08-10",
+                    "descricao": "Saque em caixa eletrônico"
+                },
+                {
+                    "id": 2,
+                    "tipo": "deposito",
+                    "valor": 500.00,
+                    "data": "2024-08-12",
+                    "descricao": "Depósito via cheque"
+                }
+            ]
+        },
+        {
+            "numero_conta": "00234567",
+            "titular": "Laura Mendes",
+            "saldo": 3500.75,
+            "tipo": "poupança",
+            "rendimento_mensal": 0.5,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "deposito",
+                    "valor": 1000.00,
+                    "data": "2024-08-11",
+                    "descricao": "Transferência bancária"
+                },
+                {
+                    "id": 2,
+                    "tipo": "saque",
+                    "valor": 300.00,
+                    "data": "2024-08-13",
+                    "descricao": "Saque em caixa eletrônico"
+                }
+            ]
+        },
+        {
+            "numero_conta": "00345678",
+            "titular": "Marcos Vinícius",
+            "saldo": 2500.00,
+            "tipo": "corrente",
+            "limite_credito": 1500.00,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "pagamento",
+                    "valor": 250.00,
+                    "data": "2024-08-09",
+                    "descricao": "Pagamento de conta de luz"
+                }
+            ]
+        }
+    ],
+    "transacoes": [
+        {
+            "id": 1,
+            "numero_conta": "00123456",
+            "tipo": "saque",
+            "valor": 200.00,
+            "data": "2024-08-10",
+            "descricao": "Saque em caixa eletrônico"
+        },
+        {
+            "id": 2,
+            "numero_conta": "00234567",
+            "tipo": "deposito",
+            "valor": 500.00,
+            "data": "2024-08-12",
+            "descricao": "Depósito via cheque"
+        },
+        {
+            "id": 3,
+            "numero_conta": "003456
+
+78",
+            "tipo": "pagamento",
+            "valor": 250.00,
+            "data": "2024-08-09",
+            "descricao": "Pagamento de conta de luz"
+        }
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Rafael Santos",
+            "documento": "12345678900",
+            "telefone": "(11) 91234-5678",
+            "email": "rafael.santos@example.com"
+        },
+        {
+            "id": 2,
+            "nome": "Laura Mendes",
+            "documento": "98765432100",
+            "telefone": "(21) 91234-5678",
+            "email": "laura.mendes@example.com"
+        },
+        {
+            "id": 3,
+            "nome": "Marcos Vinícius",
+            "documento": "19283746500",
+            "telefone": "(31) 99876-5432",
+            "email": "marcos.vinicius@example.com"
+        }
+    ]
+}

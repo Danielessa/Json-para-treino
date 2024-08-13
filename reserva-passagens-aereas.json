@@ -1,0 +1,94 @@
+{
+    "voos": [
+        {
+            "numero_voo": "AB1234",
+            "origem": "São Paulo",
+            "destino": "Rio de Janeiro",
+            "hora_partida": "2024-08-20T10:00:00",
+            "hora_chegada": "2024-08-20T11:00:00",
+            "assentos_disponiveis": 50,
+            "aeronave": "Boeing 737",
+            "companhia_aerea": "Air Brazil"
+        },
+        {
+            "numero_voo": "CD5678",
+            "origem": "Brasília",
+            "destino": "Salvador",
+            "hora_partida": "2024-08-21T14:00:00",
+            "hora_chegada": "2024-08-21T16:00:00",
+            "assentos_disponiveis": 30,
+            "aeronave": "Airbus A320",
+            "companhia_aerea": "Sky Airlines"
+        },
+        {
+            "numero_voo": "EF9012",
+            "origem": "Recife",
+            "destino": "Fortaleza",
+            "hora_partida": "2024-08-22T08:00:00",
+            "hora_chegada": "2024-08-22T09:30:00",
+            "assentos_disponiveis": 20,
+            "aeronave": "Embraer E190",
+            "companhia_aerea": "Blue Wings"
+        }
+    ],
+    "reservas": [
+        {
+            "id": 1,
+            "passageiro": {
+                "nome": "José Carlos",
+                "documento": "12345678900",
+                "email": "jose.carlos@example.com",
+                "telefone": "(11) 91234-5678"
+            },
+            "numero_voo": "AB1234",
+            "assento": "12A",
+            "data_reserva": "2024-08-01",
+            "valor_passagem": 500.00,
+            "status": "confirmada"
+        },
+        {
+            "id": 2,
+            "passageiro": {
+                "nome": "Maria Aparecida",
+                "documento": "98765432100",
+                "email": "maria.aparecida@example.com",
+                "telefone": "(21) 98765-4321"
+            },
+            "numero_voo": "CD5678",
+            "assento": "8B",
+            "data_reserva": "2024-08-02",
+            "valor_passagem": 600.00,
+            "status": "confirmada"
+        },
+        {
+            "id": 3,
+            "passageiro": {
+                "nome": "Ana Lima",
+                "documento": "00123456789",
+                "email": "ana.lima@example.com",
+                "telefone": "(31) 99876-5432"
+            },
+            "numero_voo": "EF9012",
+            "assento": "5C",
+            "data_reserva": "2024-08-03",
+            "valor_passagem": 400.00,
+            "status": "pendente"
+        }
+    ],
+    "passageiros_frequentes": [
+        {
+            "nome": "José Carlos",
+            "documento": "12345678900",
+            "voos_acumulados": 10,
+            "milhas": 15000,
+            "nivel": "gold"
+        },
+        {
+            "nome": "Maria Aparecida",
+            "documento": "98765432100",
+            "voos_acumulados": 5,
+            "milhas": 8000,
+            "nivel": "silver"
+        }
+    ]
+}

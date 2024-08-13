@@ -1,0 +1,119 @@
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Arroz 5kg",
+            "lote": "2024-01",
+            "quantidade": 100,
+            "validade": "2024-12-31",
+            "fornecedor_id": 1,
+            "codigo_barras": "1234567890123",
+            "preco_unitario": 25.00
+        },
+        {
+            "id": 2,
+            "nome": "Feijão 1kg",
+            "lote": "2024-02",
+            "quantidade": 50,
+            "validade": "2025-01-15",
+            "fornecedor_id": 2,
+            "codigo_barras": "9876543210987",
+            "preco_unitario": 8.00
+        },
+        {
+            "id": 3,
+            "nome": "Açúcar 1kg",
+            "lote": "2024-03",
+            "quantidade": 200,
+            "validade": "2025-02-10",
+            "fornecedor_id": 1,
+            "codigo_barras": "1928374650912",
+            "preco_unitario": 4.50
+        },
+        {
+            "id": 4,
+            "nome": "Sal 1kg",
+            "lote": "2024-04",
+            "quantidade": 150,
+            "validade": "2025-03-05",
+            "fornecedor_id": 3,
+            "codigo_barras": "1122334455667",
+            "preco_unitario": 3.00
+        }
+    ],
+    "entradas": [
+        {
+            "produto_id": 1,
+            "quantidade": 50,
+            "data": "2024-08-10",
+            "lote": "2024-01",
+            "preco_unitario": 24.00,
+            "fornecedor_id": 1
+        },
+        {
+            "produto_id": 2,
+            "quantidade": 30,
+            "data": "2024-08-12",
+            "lote": "2024-02",
+            "preco_unitario": 7.50,
+            "fornecedor_id": 2
+        },
+        {
+            "produto_id": 3,
+            "quantidade": 100,
+            "data": "2024-08-15",
+            "lote": "2024-03",
+            "preco_unitario": 4.00,
+            "fornecedor_id": 1
+        }
+    ],
+    "saidas": [
+        {
+            "produto_id": 1,
+            "quantidade": 10,
+            "data": "2024-08-11",
+            "destino": "Loja A",
+            "valor_unitario": 25.00,
+            "lote": "2024-01"
+        },
+        {
+            "produto_id": 2,
+            "quantidade": 5,
+            "data": "2024-08-13",
+            "destino": "Loja B",
+            "valor_unitario": 8.00,
+            "lote": "2024-02"
+        },
+        {
+            "produto_id": 3,
+            "quantidade": 20,
+            "data": "2024-08-14",
+            "destino": "Loja C",
+            "valor_unitario": 4.50,
+            "lote": "2024-03"
+        }
+    ],
+    "fornecedores": [
+        {
+            "id": 1,
+            "nome": "Fornecedor A",
+            "contato": "fornecedora@example.com",
+            "endereco": "Rua A, 123",
+            "telefone": "(11) 1234-5678"
+        },
+        {
+            "id": 2,
+            "nome": "Fornecedor B",
+            "contato": "fornecedorb@example.com",
+            "endereco": "Avenida B, 456",
+            "telefone": "(21) 9876-5432"
+        },
+        {
+            "id": 3,
+            "nome": "Fornecedor C",
+            "contato": "fornecedorc@example.com",
+            "endereco": "Praça C, 789",
+            "telefone": "(31) 6543-2109"
+        }
+    ]
+}

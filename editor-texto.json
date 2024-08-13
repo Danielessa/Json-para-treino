@@ -1,0 +1,108 @@
+{
+    "documentos": [
+        {
+            "id": 1,
+            "titulo": "Relatório Anual",
+            "conteudo": "Este é o conteúdo do relatório anual...",
+            "formatacao": {
+                "fonte": "Arial",
+                "tamanho": 12,
+                "cor": "#000000",
+                "alinhamento": "justificado",
+                "espacamento_linhas": 1.5,
+                "margens": {
+                    "superior": 2.5,
+                    "inferior": 2.5,
+                    "esquerda": 3.0,
+                    "direita": 3.0
+                }
+            },
+            "historico_alteracoes": [
+                {
+                    "data": "2024-07-01",
+                    "alteracao": "Criação do documento"
+                },
+                {
+                    "data": "2024-07-10",
+                    "alteracao": "Adição de introdução"
+                },
+                {
+                    "data": "2024-07-15",
+                    "alteracao": "Revisão do conteúdo"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Proposta Comercial",
+            "conteudo": "Esta é a proposta comercial...",
+            "formatacao": {
+                "fonte": "Times New Roman",
+                "tamanho": 14,
+                "cor": "#333333",
+                "alinhamento": "esquerda",
+                "espacamento_linhas": 1.0,
+                "margens": {
+                    "superior": 2.0,
+                    "inferior": 2.0,
+                    "esquerda": 2.5,
+                    "direita": 2.5
+                }
+            },
+            "historico_alteracoes": [
+                {
+                    "data": "2024-08-01",
+                    "alteracao": "Criação do documento"
+                },
+                {
+                    "data": "2024-08-05",
+                    "alteracao": "Atualização de valores"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "titulo": "Manual de Instruções",
+            "conteudo": "Este é o manual de instruções...",
+            "formatacao": {
+                "fonte": "Calibri",
+                "tamanho": 11,
+                "cor": "#000000",
+                "alinhamento": "justificado",
+                "espacamento_linhas": 1.15,
+                "margens": {
+                    "superior": 2.0,
+                    "inferior": 2.0,
+                    "esquerda": 2.5,
+                    "direita": 2.5
+               
+
+ }
+            },
+            "historico_alteracoes": [
+                {
+                    "data": "2024-06-01",
+                    "alteracao": "Criação do documento"
+                },
+                {
+                    "data": "2024-06-10",
+                    "alteracao": "Revisão técnica"
+                }
+            ]
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "José Pereira",
+            "email": "jose.pereira@example.com",
+            "documentos": [1, 2]
+        },
+        {
+            "id": 2,
+            "nome": "Maria Oliveira",
+            "email": "maria.oliveira@example.com",
+            "documentos": [3]
+        }
+    ]
+}

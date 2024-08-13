@@ -1,0 +1,139 @@
+{
+    "contas": [
+        {
+            "numero": "123456789",
+            "titular": "Gustavo Almeida",
+            "saldo": 5000.00,
+            "tipo": "corrente",
+            "limite_credito": 2000.00,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "saque",
+                    "valor": 500.00,
+                    "data": "2024-08-11",
+                    "local": "Caixa Eletrônico - Agência 001"
+                },
+                {
+                    "id": 2,
+                    "tipo": "pagamento",
+                    "valor": 250.00,
+                    "data": "2024-08-12",
+                    "descricao": "Pagamento de conta de água"
+                },
+                {
+                    "id": 3,
+                    "tipo": "transferencia",
+                    "valor": 1000.00,
+                    "data": "2024-08-13",
+                    "conta_destino": "987654321",
+                    "descricao": "Transferência para conta de Ana"
+                }
+            ]
+        },
+        {
+            "numero": "987654321",
+            "titular": "Carolina Vieira",
+            "saldo": 2500.00,
+            "tipo": "poupança",
+            "rendimento_mensal": 0.5,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "deposito",
+                    "valor": 1500.00,
+                    "data": "2024-08-10",
+                    "local": "Depósito em dinheiro - Agência 002"
+                },
+                {
+                    "id": 2,
+                    "tipo": "saque",
+                    "valor": 200.00,
+                    "data": "2024-08-11",
+                    "local": "Caixa Eletrônico - Agência 002"
+                },
+                {
+                    "id": 3,
+                    "tipo": "transferencia",
+                    "valor": 500.00,
+                    "data": "2024-08-14",
+                    "conta_destino": "001234567",
+                    "descricao": "Transferência para conta de João"
+                }
+            ]
+        },
+        {
+            "numero": "001234567",
+            "titular": "João Santos",
+            "saldo": 3000.00,
+            "tipo": "corrente",
+            "limite_credito": 1500.00,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "saque",
+                    "valor": 300.00,
+                    "data": "2024-08-12",
+                    "local": "Caixa Eletrônico - Agência 003"
+                },
+                {
+                    "id": 2,
+                    "tipo": "pagamento",
+                    "valor": 100.00,
+                    "data": "2024-08-13",
+                    "descricao": "Pagamento de conta de telefone"
+                }
+            ]
+        }
+    ],
+    "transacoes": [
+        {
+            "id": 1,
+            "numero_conta": "123456789",
+            "tipo": "saque",
+            "valor": 500.00,
+            "data": "2024-08-11",
+            "local": "Caixa Eletrônico - Agência 001"
+        },
+        {
+            "id": 2,
+            "numero_conta": "987654321",
+            "tipo": "deposito",
+            "valor": 1500.00,
+            "data": "2024-08-10",
+            "local": "Depósito em dinheiro - Agência 002"
+        },
+        {
+            "id": 3,
+            "numero_conta": "001234567",
+            "tipo": "transferencia",
+            "valor": 500.00,
+            "data": "2024-08-14",
+            "conta_destino": "123456789",
+            "descricao": "Transferência para conta de Gustavo"
+        }
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Gustavo Almeida",
+            "documento": "12345678900",
+            "telefone": "(11) 91234-5678",
+            "email": "gustavo.almeida@example.com"
+        },
+        {
+            "id": 2,
+            "nome": "Carolina Vieira",
+            "documento": "98765432100",
+            "telefone": "(21) 91234-5678",
+            "email": "carolina.vieira@example.com"
+        },
+        {
+            "id": 3,
+            "nome": "João Santos",
+            "documento": "00123456789",
+            "telefone": "(31) 99876-5432",
+            "email": "joao.santos@example.com"
+        }
+    ]
+}

@@ -1,0 +1,65 @@
+{
+    "tabuleiro": [
+        ["torre_preta", "cavalo_preto", "bispo_preto", "rainha_preta", "rei_preto", "bispo_preto", "cavalo_preto", "torre_preta"],
+        ["peao_preto", "peao_preto", "peao_preto", "peao_preto", "peao_preto", "peao_preto", "peao_preto", "peao_preto"],
+        ["", "", "", "", "", "", "", ""],
+        ["", "", "", "", "", "", "", ""],
+        ["", "", "", "", "", "", "", ""],
+        ["", "", "", "", "", "", "", ""],
+        ["peao_branco", "peao_branco", "peao_branco", "peao_branco", "peao_branco", "peao_branco", "peao_branco", "peao_branco"],
+        ["torre_branca", "cavalo_branco", "bispo_branco", "rainha_branca", "rei_branco", "bispo_branco", "cavalo_branco", "torre_branca"]
+    ],
+    "jogadores": [
+        {
+            "nome": "João",
+            "cor": "branco",
+            "tempo_restante": "00:30:00"
+        },
+        {
+            "nome": "Maria",
+            "cor": "preto",
+            "tempo_restante": "00:30:00"
+        }
+    ],
+    "movimentos": [
+        {
+            "jogador": "João",
+            "peça": "peao_branco",
+            "de": "e2",
+            "para": "e4",
+            "tempo_movimento": "00:00:30"
+        },
+        {
+            "jogador": "Maria",
+            "peça": "peao_preto",
+            "de": "e7",
+            "para": "e5",
+            "tempo_movimento": "00:00:25"
+        },
+        {
+            "jogador": "João",
+            "peça": "cavalo_branco",
+            "de": "g1",
+            "para": "f3",
+            "tempo_movimento": "00:00:20"
+        }
+    ],
+    "partidas": [
+        {
+            "id": 1,
+            "jogador_branco": "João",
+            "jogador_preto": "Maria",
+            "vencedor": "Maria",
+            "tempo_total": "00:20:00",
+            "data": "2024-08-10"
+        },
+        {
+            "id": 2,
+            "jogador_branco": "Carlos",
+            "jogador_preto": "Ana",
+            "vencedor": "Carlos",
+            "tempo_total": "00:15:00",
+            "data": "2024-08-11"
+        }
+    ]
+}

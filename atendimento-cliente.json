@@ -1,0 +1,124 @@
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Júlia Araújo",
+            "email": "julia@example.com",
+            "telefone": "(11) 98765-4321",
+            "historico_tickets": [
+                {
+                    "id": 1,
+                    "descricao": "Problema com o pagamento",
+                    "status": "resolvido",
+                    "data_abertura": "2024-07-01",
+                    "data_fechamento": "2024-07-02"
+                },
+                {
+                    "id": 2,
+                    "descricao": "Erro na entrega",
+                    "status": "aberto",
+                    "data_abertura": "2024-08-10",
+                    "data_fechamento": null
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Pedro Ferreira",
+            "email": "pedro@example.com",
+            "telefone": "(21) 91234-5678",
+            "historico_tickets": [
+                {
+                    "id": 3,
+                    "descricao": "Dúvida sobre o produto",
+                    "status": "resolvido",
+                    "data_abertura": "2024-06-15",
+                    "data_fechamento": "2024-06-16"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Ana Lima",
+            "email": "ana@example.com",
+            "telefone": "(31) 99876-5432",
+            "historico_tickets": [
+                {
+                    "id": 4,
+                    "descricao": "Problema com a instalação",
+                    "status": "aberto",
+                    "data_abertura": "2024-08-05",
+                    "data_fechamento": null
+                }
+            ]
+        }
+    ],
+    "tickets": [
+        {
+            "id": 1,
+            "cliente_id": 1,
+            "descricao": "Problema com o pagamento",
+            "status": "resolvido",
+            "prioridade": "alta",
+            "data_abertura": "2024-07-01",
+            "data_fechamento": "2024-07-02",
+            "atendente_id": 1
+        },
+        {
+            "id": 2,
+            "cliente_id": 1,
+            "descricao": "Erro na entrega",
+            "status": "aberto",
+            "prioridade": "média",
+            "data_abertura": "2024-08-10",
+            "data_fechamento": null,
+            "atendente_id": 2
+        },
+        {
+            "id": 3,
+            "cliente_id": 2,
+            "descricao": "Dúvida sobre o produto",
+            "status": "resolvido",
+            "prioridade": "baixa",
+            "data_abertura": "2024-06-15",
+            "data_fechamento": "2024-06-16",
+            "atendente_id": 3
+        },
+        {
+            "id": 4,
+            "cliente_id": 3,
+            "descricao": "Problema com a instalação",
+            "status": "aberto",
+            "prioridade": "alta",
+            "data_abertura": "2024-08-05",
+            "data_fechamento": null,
+            "atendente_id": 1
+        }
+    ],
+    "atendentes": [
+        {
+            "id": 1,
+            "nome": "Atendente A",
+            "email": "atendentea@example.com",
+            "telefone": "(11) 91234-5678",
+            "especialidade": "pagamentos",
+            "tickets_resolvidos": 10
+        },
+        {
+            "id": 2,
+            "nome": "Atendente B",
+            "email": "atendenteb@example.com",
+            "telefone": "(21) 91234-5678",
+            "especialidade": "entregas",
+            "tickets_resolvidos": 15
+        },
+        {
+            "id": 3,
+            "nome": "Atendente C",
+            "email": "atendentec@example.com",
+            "telefone": "(31) 91234-5678",
+            "especialidade": "produtos",
+            "tickets_resolvidos": 20
+        }
+    ]
+}

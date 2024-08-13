@@ -1,0 +1,2449 @@
+### 1. **Sistema de Gestão de Biblioteca**
+```json
+{
+    "livros": [
+        {
+            "id": 1,
+            "titulo": "Python para Iniciantes",
+            "autor": "John Doe",
+            "ano_publicacao": 2020,
+            "disponivel": true,
+            "genero": "Tecnologia",
+            "exemplares": 3
+        },
+        {
+            "id": 2,
+            "titulo": "Algoritmos Avançados",
+            "autor": "Jane Smith",
+            "ano_publicacao": 2018,
+            "disponivel": false,
+            "genero": "Tecnologia",
+            "exemplares": 2
+        },
+        {
+            "id": 3,
+            "titulo": "História do Brasil",
+            "autor": "Pedro Silva",
+            "ano_publicacao": 2015,
+            "disponivel": true,
+            "genero": "História",
+            "exemplares": 5
+        },
+        {
+            "id": 4,
+            "titulo": "Engenharia de Software",
+            "autor": "Andrew Tanenbaum",
+            "ano_publicacao": 2017,
+            "disponivel": false,
+            "genero": "Tecnologia",
+            "exemplares": 4
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Carlos Silva",
+            "tipo": "aluno",
+            "curso": "Engenharia de Computação",
+            "historico": [
+                {
+                    "livro_id": 2,
+                    "data_emprestimo": "2024-01-15",
+                    "data_devolucao": "2024-02-15"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Ana Souza",
+            "tipo": "professor",
+            "departamento": "Ciência da Computação",
+            "historico": [
+                {
+                    "livro_id": 1,
+                    "data_emprestimo": "2024-03-01",
+                    "data_devolucao": "2024-04-01"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Lucas Pereira",
+            "tipo": "aluno",
+            "curso": "História",
+            "historico": [
+                {
+                    "livro_id": 3,
+                    "data_emprestimo": "2024-06-10",
+                    "data_devolucao": "2024-07-10"
+                }
+            ]
+        }
+    ],
+    "emprestimos": [
+        {
+            "id": 1,
+            "livro_id": 1,
+            "usuario_id": 2,
+            "data_emprestimo": "2024-08-01",
+            "data_devolucao_prevista": "2024-09-01",
+            "data_devolucao": null
+        },
+        {
+            "id": 2,
+            "livro_id": 3,
+            "usuario_id": 3,
+            "data_emprestimo": "2024-07-10",
+            "data_devolucao_prevista": "2024-08-10",
+            "data_devolucao": "2024-08-08"
+        }
+    ]
+}
+```
+
+### 2. **Jogo de Xadrez**
+```json
+{
+    "tabuleiro": [
+        ["torre_preta", "cavalo_preto", "bispo_preto", "rainha_preta", "rei_preto", "bispo_preto", "cavalo_preto", "torre_preta"],
+        ["peao_preto", "peao_preto", "peao_preto", "peao_preto", "peao_preto", "peao_preto", "peao_preto", "peao_preto"],
+        ["", "", "", "", "", "", "", ""],
+        ["", "", "", "", "", "", "", ""],
+        ["", "", "", "", "", "", "", ""],
+        ["", "", "", "", "", "", "", ""],
+        ["peao_branco", "peao_branco", "peao_branco", "peao_branco", "peao_branco", "peao_branco", "peao_branco", "peao_branco"],
+        ["torre_branca", "cavalo_branco", "bispo_branco", "rainha_branca", "rei_branco", "bispo_branco", "cavalo_branco", "torre_branca"]
+    ],
+    "jogadores": [
+        {
+            "nome": "João",
+            "cor": "branco",
+            "tempo_restante": "00:30:00"
+        },
+        {
+            "nome": "Maria",
+            "cor": "preto",
+            "tempo_restante": "00:30:00"
+        }
+    ],
+    "movimentos": [
+        {
+            "jogador": "João",
+            "peça": "peao_branco",
+            "de": "e2",
+            "para": "e4",
+            "tempo_movimento": "00:00:30"
+        },
+        {
+            "jogador": "Maria",
+            "peça": "peao_preto",
+            "de": "e7",
+            "para": "e5",
+            "tempo_movimento": "00:00:25"
+        },
+        {
+            "jogador": "João",
+            "peça": "cavalo_branco",
+            "de": "g1",
+            "para": "f3",
+            "tempo_movimento": "00:00:20"
+        }
+    ],
+    "partidas": [
+        {
+            "id": 1,
+            "jogador_branco": "João",
+            "jogador_preto": "Maria",
+            "vencedor": "Maria",
+            "tempo_total": "00:20:00",
+            "data": "2024-08-10"
+        },
+        {
+            "id": 2,
+            "jogador_branco": "Carlos",
+            "jogador_preto": "Ana",
+            "vencedor": "Carlos",
+            "tempo_total": "00:15:00",
+            "data": "2024-08-11"
+        }
+    ]
+}
+```
+
+### 3. **Sistema de Votação Eletrônica**
+```json
+{
+    "eleitores": [
+        {
+            "id": 1,
+            "nome": "Lucas Oliveira",
+            "votou": false,
+            "zona_eleitoral": "101",
+            "secao_eleitoral": "20"
+        },
+        {
+            "id": 2,
+            "nome": "Mariana Costa",
+            "votou": true,
+            "zona_eleitoral": "101",
+            "secao_eleitoral": "20"
+        },
+        {
+            "id": 3,
+            "nome": "Carlos Mendes",
+            "votou": false,
+            "zona_eleitoral": "102",
+            "secao_eleitoral": "15"
+        },
+        {
+            "id": 4,
+            "nome": "Ana Paula Silva",
+            "votou": false,
+            "zona_eleitoral": "102",
+            "secao_eleitoral": "15"
+        }
+    ],
+    "candidatos": [
+        {
+            "id": 1,
+            "nome": "Candidato A",
+            "partido": "Partido X",
+            "numero": "10",
+            "propostas": [
+                "Educação para todos",
+                "Mais empregos"
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Candidato B",
+            "partido": "Partido Y",
+            "numero": "20",
+            "propostas": [
+                "Saúde de qualidade",
+                "Redução de impostos"
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Candidato C",
+            "partido": "Partido Z",
+            "numero": "30",
+            "propostas": [
+                "Segurança pública",
+                "Investimento em infraestrutura"
+            ]
+        }
+    ],
+    "eleicao": {
+        "ano": 2024,
+        "tipo": "presidencial",
+        "turno": 1,
+        "data": "2024-10-02"
+    },
+    "votos": [
+        {
+            "id": 1,
+            "eleitor_id": 2,
+            "candidato_id": 1,
+            "data_hora": "2024-10-02T09:00:00"
+        },
+        {
+            "id": 2,
+            "eleitor_id": 4,
+            "candidato_id": 2,
+            "data_hora": "2024-10-02T10:00:00"
+        },
+        {
+            "id": 3,
+            "eleitor_id": 3,
+            "candidato_id": 3,
+            "data_hora": "2024-10-02T11:00:00"
+        }
+    ]
+}
+```
+
+### 4. **Gerenciamento de Inventário**
+```json
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome":
+
+ "Teclado Mecânico",
+            "categoria": "Periféricos",
+            "quantidade": 10,
+            "preco": 150.00,
+            "fornecedor_id": 1,
+            "codigo_barras": "1234567890123",
+            "data_entrada": "2024-08-01"
+        },
+        {
+            "id": 2,
+            "nome": "Monitor 4K",
+            "categoria": "Monitores",
+            "quantidade": 5,
+            "preco": 1200.00,
+            "fornecedor_id": 2,
+            "codigo_barras": "9876543210987",
+            "data_entrada": "2024-08-03"
+        },
+        {
+            "id": 3,
+            "nome": "Mouse Gamer",
+            "categoria": "Periféricos",
+            "quantidade": 20,
+            "preco": 250.00,
+            "fornecedor_id": 1,
+            "codigo_barras": "1928374650912",
+            "data_entrada": "2024-08-05"
+        },
+        {
+            "id": 4,
+            "nome": "Cadeira Ergonomica",
+            "categoria": "Mobiliário",
+            "quantidade": 8,
+            "preco": 800.00,
+            "fornecedor_id": 3,
+            "codigo_barras": "1122334455667",
+            "data_entrada": "2024-08-06"
+        }
+    ],
+    "fornecedores": [
+        {
+            "id": 1,
+            "nome": "Fornecedor A",
+            "contato": "fornecedora@example.com",
+            "endereco": "Rua A, 123",
+            "telefone": "(11) 1234-5678"
+        },
+        {
+            "id": 2,
+            "nome": "Fornecedor B",
+            "contato": "fornecedorb@example.com",
+            "endereco": "Avenida B, 456",
+            "telefone": "(21) 9876-5432"
+        },
+        {
+            "id": 3,
+            "nome": "Fornecedor C",
+            "contato": "fornecedorc@example.com",
+            "endereco": "Praça C, 789",
+            "telefone": "(31) 6543-2109"
+        }
+    ],
+    "movimentacoes": [
+        {
+            "id": 1,
+            "produto_id": 1,
+            "tipo": "saida",
+            "quantidade": 2,
+            "data": "2024-08-10",
+            "motivo": "Venda"
+        },
+        {
+            "id": 2,
+            "produto_id": 3,
+            "tipo": "entrada",
+            "quantidade": 10,
+            "data": "2024-08-11",
+            "motivo": "Reposição"
+        },
+        {
+            "id": 3,
+            "produto_id": 2,
+            "tipo": "saida",
+            "quantidade": 1,
+            "data": "2024-08-12",
+            "motivo": "Defeito"
+        }
+    ]
+}
+```
+
+### 5. **Sistema de Reserva de Hotel**
+```json
+{
+    "quartos": [
+        {
+            "numero": 101,
+            "tipo": "solteiro",
+            "preco": 100.00,
+            "disponivel": true,
+            "facilidades": ["Wi-Fi", "Ar-condicionado", "TV a cabo"],
+            "reservas": []
+        },
+        {
+            "numero": 102,
+            "tipo": "casal",
+            "preco": 150.00,
+            "disponivel": false,
+            "facilidades": ["Wi-Fi", "Ar-condicionado", "Frigobar"],
+            "reservas": [
+                {
+                    "id": 1,
+                    "cliente_id": 1,
+                    "data_checkin": "2024-08-10",
+                    "data_checkout": "2024-08-15"
+                }
+            ]
+        },
+        {
+            "numero": 103,
+            "tipo": "suite",
+            "preco": 300.00,
+            "disponivel": true,
+            "facilidades": ["Wi-Fi", "Ar-condicionado", "Jacuzzi", "Varanda"],
+            "reservas": []
+        },
+        {
+            "numero": 104,
+            "tipo": "quarto familiar",
+            "preco": 200.00,
+            "disponivel": true,
+            "facilidades": ["Wi-Fi", "Ar-condicionado", "TV a cabo", "Frigobar"],
+            "reservas": []
+        }
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Fernanda Lima",
+            "documento": "123456789",
+            "telefone": "(11) 99876-5432",
+            "email": "fernanda.lima@example.com",
+            "historico_reservas": [
+                {
+                    "numero_quarto": 102,
+                    "data_checkin": "2024-08-10",
+                    "data_checkout": "2024-08-15"
+                },
+                {
+                    "numero_quarto": 103,
+                    "data_checkin": "2024-05-01",
+                    "data_checkout": "2024-05-03"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Marcelo Nunes",
+            "documento": "987654321",
+            "telefone": "(21) 91234-5678",
+            "email": "marcelo.nunes@example.com",
+            "historico_reservas": [
+                {
+                    "numero_quarto": 101,
+                    "data_checkin": "2024-07-20",
+                    "data_checkout": "2024-07-22"
+                }
+            ]
+        }
+    ],
+    "reservas": [
+        {
+            "id": 1,
+            "cliente_id": 1,
+            "numero_quarto": 102,
+            "data_checkin": "2024-08-10",
+            "data_checkout": "2024-08-15",
+            "valor_total": 750.00
+        },
+        {
+            "id": 2,
+            "cliente_id": 2,
+            "numero_quarto": 101,
+            "data_checkin": "2024-07-20",
+            "data_checkout": "2024-07-22",
+            "valor_total": 200.00
+        }
+    ]
+}
+```
+
+### 6. **Simulador de Banco**
+```json
+{
+    "contas": [
+        {
+            "numero_conta": "00123456",
+            "titular": "Rafael Santos",
+            "saldo": 1500.50,
+            "tipo": "corrente",
+            "limite_credito": 2000.00,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "saque",
+                    "valor": 200.00,
+                    "data": "2024-08-10",
+                    "descricao": "Saque em caixa eletrônico"
+                },
+                {
+                    "id": 2,
+                    "tipo": "deposito",
+                    "valor": 500.00,
+                    "data": "2024-08-12",
+                    "descricao": "Depósito via cheque"
+                }
+            ]
+        },
+        {
+            "numero_conta": "00234567",
+            "titular": "Laura Mendes",
+            "saldo": 3500.75,
+            "tipo": "poupança",
+            "rendimento_mensal": 0.5,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "deposito",
+                    "valor": 1000.00,
+                    "data": "2024-08-11",
+                    "descricao": "Transferência bancária"
+                },
+                {
+                    "id": 2,
+                    "tipo": "saque",
+                    "valor": 300.00,
+                    "data": "2024-08-13",
+                    "descricao": "Saque em caixa eletrônico"
+                }
+            ]
+        },
+        {
+            "numero_conta": "00345678",
+            "titular": "Marcos Vinícius",
+            "saldo": 2500.00,
+            "tipo": "corrente",
+            "limite_credito": 1500.00,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "pagamento",
+                    "valor": 250.00,
+                    "data": "2024-08-09",
+                    "descricao": "Pagamento de conta de luz"
+                }
+            ]
+        }
+    ],
+    "transacoes": [
+        {
+            "id": 1,
+            "numero_conta": "00123456",
+            "tipo": "saque",
+            "valor": 200.00,
+            "data": "2024-08-10",
+            "descricao": "Saque em caixa eletrônico"
+        },
+        {
+            "id": 2,
+            "numero_conta": "00234567",
+            "tipo": "deposito",
+            "valor": 500.00,
+            "data": "2024-08-12",
+            "descricao": "Depósito via cheque"
+        },
+        {
+            "id": 3,
+            "numero_conta": "003456
+
+78",
+            "tipo": "pagamento",
+            "valor": 250.00,
+            "data": "2024-08-09",
+            "descricao": "Pagamento de conta de luz"
+        }
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Rafael Santos",
+            "documento": "12345678900",
+            "telefone": "(11) 91234-5678",
+            "email": "rafael.santos@example.com"
+        },
+        {
+            "id": 2,
+            "nome": "Laura Mendes",
+            "documento": "98765432100",
+            "telefone": "(21) 91234-5678",
+            "email": "laura.mendes@example.com"
+        },
+        {
+            "id": 3,
+            "nome": "Marcos Vinícius",
+            "documento": "19283746500",
+            "telefone": "(31) 99876-5432",
+            "email": "marcos.vinicius@example.com"
+        }
+    ]
+}
+```
+
+### 7. **Sistema de Atendimento ao Cliente**
+```json
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Júlia Araújo",
+            "email": "julia@example.com",
+            "telefone": "(11) 98765-4321",
+            "historico_tickets": [
+                {
+                    "id": 1,
+                    "descricao": "Problema com o pagamento",
+                    "status": "resolvido",
+                    "data_abertura": "2024-07-01",
+                    "data_fechamento": "2024-07-02"
+                },
+                {
+                    "id": 2,
+                    "descricao": "Erro na entrega",
+                    "status": "aberto",
+                    "data_abertura": "2024-08-10",
+                    "data_fechamento": null
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Pedro Ferreira",
+            "email": "pedro@example.com",
+            "telefone": "(21) 91234-5678",
+            "historico_tickets": [
+                {
+                    "id": 3,
+                    "descricao": "Dúvida sobre o produto",
+                    "status": "resolvido",
+                    "data_abertura": "2024-06-15",
+                    "data_fechamento": "2024-06-16"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Ana Lima",
+            "email": "ana@example.com",
+            "telefone": "(31) 99876-5432",
+            "historico_tickets": [
+                {
+                    "id": 4,
+                    "descricao": "Problema com a instalação",
+                    "status": "aberto",
+                    "data_abertura": "2024-08-05",
+                    "data_fechamento": null
+                }
+            ]
+        }
+    ],
+    "tickets": [
+        {
+            "id": 1,
+            "cliente_id": 1,
+            "descricao": "Problema com o pagamento",
+            "status": "resolvido",
+            "prioridade": "alta",
+            "data_abertura": "2024-07-01",
+            "data_fechamento": "2024-07-02",
+            "atendente_id": 1
+        },
+        {
+            "id": 2,
+            "cliente_id": 1,
+            "descricao": "Erro na entrega",
+            "status": "aberto",
+            "prioridade": "média",
+            "data_abertura": "2024-08-10",
+            "data_fechamento": null,
+            "atendente_id": 2
+        },
+        {
+            "id": 3,
+            "cliente_id": 2,
+            "descricao": "Dúvida sobre o produto",
+            "status": "resolvido",
+            "prioridade": "baixa",
+            "data_abertura": "2024-06-15",
+            "data_fechamento": "2024-06-16",
+            "atendente_id": 3
+        },
+        {
+            "id": 4,
+            "cliente_id": 3,
+            "descricao": "Problema com a instalação",
+            "status": "aberto",
+            "prioridade": "alta",
+            "data_abertura": "2024-08-05",
+            "data_fechamento": null,
+            "atendente_id": 1
+        }
+    ],
+    "atendentes": [
+        {
+            "id": 1,
+            "nome": "Atendente A",
+            "email": "atendentea@example.com",
+            "telefone": "(11) 91234-5678",
+            "especialidade": "pagamentos",
+            "tickets_resolvidos": 10
+        },
+        {
+            "id": 2,
+            "nome": "Atendente B",
+            "email": "atendenteb@example.com",
+            "telefone": "(21) 91234-5678",
+            "especialidade": "entregas",
+            "tickets_resolvidos": 15
+        },
+        {
+            "id": 3,
+            "nome": "Atendente C",
+            "email": "atendentec@example.com",
+            "telefone": "(31) 91234-5678",
+            "especialidade": "produtos",
+            "tickets_resolvidos": 20
+        }
+    ]
+}
+```
+
+### 8. **Sistema de Gestão Escolar**
+```json
+{
+    "estudantes": [
+        {
+            "id": 1,
+            "nome": "Bruno Martins",
+            "curso": "Ciência da Computação",
+            "ano_ingresso": 2022,
+            "disciplinas_matriculadas": [
+                {
+                    "id": 1,
+                    "nome": "Algoritmos",
+                    "professor": "Professor Carlos",
+                    "notas": [7.5, 8.0, 9.0],
+                    "media": 8.2
+                },
+                {
+                    "id": 2,
+                    "nome": "Estruturas de Dados",
+                    "professor": "Professora Marta",
+                    "notas": [6.5, 7.0, 8.5],
+                    "media": 7.3
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Isabela Lopes",
+            "curso": "Engenharia de Software",
+            "ano_ingresso": 2021,
+            "disciplinas_matriculadas": [
+                {
+                    "id": 3,
+                    "nome": "Banco de Dados",
+                    "professor": "Professor João",
+                    "notas": [8.5, 9.0, 9.5],
+                    "media": 9.0
+                },
+                {
+                    "id": 4,
+                    "nome": "Sistemas Operacionais",
+                    "professor": "Professora Ana",
+                    "notas": [7.0, 7.5, 8.0],
+                    "media": 7.5
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Lucas Almeida",
+            "curso": "Sistemas de Informação",
+            "ano_ingresso": 2020,
+            "disciplinas_matriculadas": [
+                {
+                    "id": 1,
+                    "nome": "Algoritmos",
+                    "professor": "Professor Carlos",
+                    "notas": [8.0, 8.5, 9.5],
+                    "media": 8.7
+                },
+                {
+                    "id": 5,
+                    "nome": "Engenharia de Software",
+                    "professor": "Professor Pedro",
+                    "notas": [7.0, 8.0, 8.5],
+                    "media": 7.8
+                }
+            ]
+        }
+    ],
+    "professores": [
+        {
+            "id": 1,
+            "nome": "Professor Carlos",
+            "disciplina": "Algoritmos",
+            "departamento": "Ciência da Computação",
+            "turmas": [
+                {
+                    "id": 1,
+                    "disciplina": "Algoritmos",
+                    "sala": "101",
+                    "horario": "Segunda e Quarta, 08:00 - 10:00"
+                },
+                {
+                    "id": 2,
+                    "disciplina": "Algoritmos Avançados",
+                    "sala": "102",
+                    "horario": "Terça e Quinta, 10:00 - 12:00"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Professora Marta",
+            "disciplina": "Estruturas de Dados",
+            "departamento": "Engenharia de Software",
+            "turmas": [
+                {
+                    "id": 3,
+                    "disciplina": "Estruturas de Dados",
+                    "sala": "103",
+                    "horario": "Segunda e Quarta, 10:00 - 12:00"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Professor João",
+            "disciplina": "Banco de Dados",
+            "departamento": "Sistemas de Informação",
+            "turmas": [
+                {
+                    "id": 4,
+                    "disciplina": "Banco de Dados",
+                    "sala
+
+": "104",
+                    "horario": "Terça e Quinta, 08:00 - 10:00"
+                }
+            ]
+        }
+    ],
+    "disciplinas": [
+        {
+            "id": 1,
+            "nome": "Algoritmos",
+            "carga_horaria": 60,
+            "professor_id": 1
+        },
+        {
+            "id": 2,
+            "nome": "Estruturas de Dados",
+            "carga_horaria": 80,
+            "professor_id": 2
+        },
+        {
+            "id": 3,
+            "nome": "Banco de Dados",
+            "carga_horaria": 70,
+            "professor_id": 3
+        },
+        {
+            "id": 4,
+            "nome": "Sistemas Operacionais",
+            "carga_horaria": 75,
+            "professor_id": 2
+        },
+        {
+            "id": 5,
+            "nome": "Engenharia de Software",
+            "carga_horaria": 90,
+            "professor_id": 1
+        }
+    ],
+    "cursos": [
+        {
+            "id": 1,
+            "nome": "Ciência da Computação",
+            "duracao": 8,
+            "coordenador": "Professor Carlos"
+        },
+        {
+            "id": 2,
+            "nome": "Engenharia de Software",
+            "duracao": 8,
+            "coordenador": "Professora Marta"
+        },
+        {
+            "id": 3,
+            "nome": "Sistemas de Informação",
+            "duracao": 8,
+            "coordenador": "Professor João"
+        }
+    ]
+}
+```
+
+### 9. **Simulador de Caixa Eletrônico (ATM)**
+```json
+{
+    "contas": [
+        {
+            "numero": "123456789",
+            "titular": "Gustavo Almeida",
+            "saldo": 5000.00,
+            "tipo": "corrente",
+            "limite_credito": 2000.00,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "saque",
+                    "valor": 500.00,
+                    "data": "2024-08-11",
+                    "local": "Caixa Eletrônico - Agência 001"
+                },
+                {
+                    "id": 2,
+                    "tipo": "pagamento",
+                    "valor": 250.00,
+                    "data": "2024-08-12",
+                    "descricao": "Pagamento de conta de água"
+                },
+                {
+                    "id": 3,
+                    "tipo": "transferencia",
+                    "valor": 1000.00,
+                    "data": "2024-08-13",
+                    "conta_destino": "987654321",
+                    "descricao": "Transferência para conta de Ana"
+                }
+            ]
+        },
+        {
+            "numero": "987654321",
+            "titular": "Carolina Vieira",
+            "saldo": 2500.00,
+            "tipo": "poupança",
+            "rendimento_mensal": 0.5,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "deposito",
+                    "valor": 1500.00,
+                    "data": "2024-08-10",
+                    "local": "Depósito em dinheiro - Agência 002"
+                },
+                {
+                    "id": 2,
+                    "tipo": "saque",
+                    "valor": 200.00,
+                    "data": "2024-08-11",
+                    "local": "Caixa Eletrônico - Agência 002"
+                },
+                {
+                    "id": 3,
+                    "tipo": "transferencia",
+                    "valor": 500.00,
+                    "data": "2024-08-14",
+                    "conta_destino": "001234567",
+                    "descricao": "Transferência para conta de João"
+                }
+            ]
+        },
+        {
+            "numero": "001234567",
+            "titular": "João Santos",
+            "saldo": 3000.00,
+            "tipo": "corrente",
+            "limite_credito": 1500.00,
+            "historico_transacoes": [
+                {
+                    "id": 1,
+                    "tipo": "saque",
+                    "valor": 300.00,
+                    "data": "2024-08-12",
+                    "local": "Caixa Eletrônico - Agência 003"
+                },
+                {
+                    "id": 2,
+                    "tipo": "pagamento",
+                    "valor": 100.00,
+                    "data": "2024-08-13",
+                    "descricao": "Pagamento de conta de telefone"
+                }
+            ]
+        }
+    ],
+    "transacoes": [
+        {
+            "id": 1,
+            "numero_conta": "123456789",
+            "tipo": "saque",
+            "valor": 500.00,
+            "data": "2024-08-11",
+            "local": "Caixa Eletrônico - Agência 001"
+        },
+        {
+            "id": 2,
+            "numero_conta": "987654321",
+            "tipo": "deposito",
+            "valor": 1500.00,
+            "data": "2024-08-10",
+            "local": "Depósito em dinheiro - Agência 002"
+        },
+        {
+            "id": 3,
+            "numero_conta": "001234567",
+            "tipo": "transferencia",
+            "valor": 500.00,
+            "data": "2024-08-14",
+            "conta_destino": "123456789",
+            "descricao": "Transferência para conta de Gustavo"
+        }
+    ],
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Gustavo Almeida",
+            "documento": "12345678900",
+            "telefone": "(11) 91234-5678",
+            "email": "gustavo.almeida@example.com"
+        },
+        {
+            "id": 2,
+            "nome": "Carolina Vieira",
+            "documento": "98765432100",
+            "telefone": "(21) 91234-5678",
+            "email": "carolina.vieira@example.com"
+        },
+        {
+            "id": 3,
+            "nome": "João Santos",
+            "documento": "00123456789",
+            "telefone": "(31) 99876-5432",
+            "email": "joao.santos@example.com"
+        }
+    ]
+}
+```
+
+### 10. **Editor de Texto Orientado a Objetos**
+```json
+{
+    "documentos": [
+        {
+            "id": 1,
+            "titulo": "Relatório Anual",
+            "conteudo": "Este é o conteúdo do relatório anual...",
+            "formatacao": {
+                "fonte": "Arial",
+                "tamanho": 12,
+                "cor": "#000000",
+                "alinhamento": "justificado",
+                "espacamento_linhas": 1.5,
+                "margens": {
+                    "superior": 2.5,
+                    "inferior": 2.5,
+                    "esquerda": 3.0,
+                    "direita": 3.0
+                }
+            },
+            "historico_alteracoes": [
+                {
+                    "data": "2024-07-01",
+                    "alteracao": "Criação do documento"
+                },
+                {
+                    "data": "2024-07-10",
+                    "alteracao": "Adição de introdução"
+                },
+                {
+                    "data": "2024-07-15",
+                    "alteracao": "Revisão do conteúdo"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Proposta Comercial",
+            "conteudo": "Esta é a proposta comercial...",
+            "formatacao": {
+                "fonte": "Times New Roman",
+                "tamanho": 14,
+                "cor": "#333333",
+                "alinhamento": "esquerda",
+                "espacamento_linhas": 1.0,
+                "margens": {
+                    "superior": 2.0,
+                    "inferior": 2.0,
+                    "esquerda": 2.5,
+                    "direita": 2.5
+                }
+            },
+            "historico_alteracoes": [
+                {
+                    "data": "2024-08-01",
+                    "alteracao": "Criação do documento"
+                },
+                {
+                    "data": "2024-08-05",
+                    "alteracao": "Atualização de valores"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "titulo": "Manual de Instruções",
+            "conteudo": "Este é o manual de instruções...",
+            "formatacao": {
+                "fonte": "Calibri",
+                "tamanho": 11,
+                "cor": "#000000",
+                "alinhamento": "justificado",
+                "espacamento_linhas": 1.15,
+                "margens": {
+                    "superior": 2.0,
+                    "inferior": 2.0,
+                    "esquerda": 2.5,
+                    "direita": 2.5
+               
+
+ }
+            },
+            "historico_alteracoes": [
+                {
+                    "data": "2024-06-01",
+                    "alteracao": "Criação do documento"
+                },
+                {
+                    "data": "2024-06-10",
+                    "alteracao": "Revisão técnica"
+                }
+            ]
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "José Pereira",
+            "email": "jose.pereira@example.com",
+            "documentos": [1, 2]
+        },
+        {
+            "id": 2,
+            "nome": "Maria Oliveira",
+            "email": "maria.oliveira@example.com",
+            "documentos": [3]
+        }
+    ]
+}
+```
+
+### 11. **Simulador de Sistema de Trânsito**
+```json
+{
+    "veiculos": [
+        {
+            "id": 1,
+            "tipo": "carro",
+            "modelo": "Sedan",
+            "placa": "ABC-1234",
+            "velocidade": 60,
+            "localizacao": {
+                "latitude": -23.5505,
+                "longitude": -46.6333
+            },
+            "status": "em movimento"
+        },
+        {
+            "id": 2,
+            "tipo": "moto",
+            "modelo": "Esportiva",
+            "placa": "XYZ-5678",
+            "velocidade": 80,
+            "localizacao": {
+                "latitude": -23.5508,
+                "longitude": -46.6340
+            },
+            "status": "em movimento"
+        },
+        {
+            "id": 3,
+            "tipo": "onibus",
+            "modelo": "Ônibus Urbano",
+            "placa": "QWE-1122",
+            "velocidade": 40,
+            "localizacao": {
+                "latitude": -23.5510,
+                "longitude": -46.6350
+            },
+            "status": "parado"
+        },
+        {
+            "id": 4,
+            "tipo": "caminhao",
+            "modelo": "Caminhão Baú",
+            "placa": "RTY-3344",
+            "velocidade": 50,
+            "localizacao": {
+                "latitude": -23.5520,
+                "longitude": -46.6360
+            },
+            "status": "em movimento"
+        }
+    ],
+    "semaforos": [
+        {
+            "id": 1,
+            "localizacao": "Avenida Central",
+            "estado": "vermelho",
+            "tempo_restante": 30,
+            "coordenadas": {
+                "latitude": -23.5505,
+                "longitude": -46.6333
+            }
+        },
+        {
+            "id": 2,
+            "localizacao": "Rua das Flores",
+            "estado": "verde",
+            "tempo_restante": 20,
+            "coordenadas": {
+                "latitude": -23.5508,
+                "longitude": -46.6340
+            }
+        },
+        {
+            "id": 3,
+            "localizacao": "Praça da Liberdade",
+            "estado": "amarelo",
+            "tempo_restante": 10,
+            "coordenadas": {
+                "latitude": -23.5510,
+                "longitude": -46.6350
+            }
+        }
+    ],
+    "ocorrencias": [
+        {
+            "id": 1,
+            "tipo": "acidente",
+            "localizacao": {
+                "latitude": -23.5505,
+                "longitude": -46.6333
+            },
+            "descricao": "Colisão entre carro e moto",
+            "data_hora": "2024-08-10T14:30:00"
+        },
+        {
+            "id": 2,
+            "tipo": "pane",
+            "localizacao": {
+                "latitude": -23.5510,
+                "longitude": -46.6350
+            },
+            "descricao": "Pane elétrica em ônibus",
+            "data_hora": "2024-08-10T15:00:00"
+        }
+    ]
+}
+```
+
+### 12. **Sistema de Controle de Estoque com Loteamento**
+```json
+{
+    "produtos": [
+        {
+            "id": 1,
+            "nome": "Arroz 5kg",
+            "lote": "2024-01",
+            "quantidade": 100,
+            "validade": "2024-12-31",
+            "fornecedor_id": 1,
+            "codigo_barras": "1234567890123",
+            "preco_unitario": 25.00
+        },
+        {
+            "id": 2,
+            "nome": "Feijão 1kg",
+            "lote": "2024-02",
+            "quantidade": 50,
+            "validade": "2025-01-15",
+            "fornecedor_id": 2,
+            "codigo_barras": "9876543210987",
+            "preco_unitario": 8.00
+        },
+        {
+            "id": 3,
+            "nome": "Açúcar 1kg",
+            "lote": "2024-03",
+            "quantidade": 200,
+            "validade": "2025-02-10",
+            "fornecedor_id": 1,
+            "codigo_barras": "1928374650912",
+            "preco_unitario": 4.50
+        },
+        {
+            "id": 4,
+            "nome": "Sal 1kg",
+            "lote": "2024-04",
+            "quantidade": 150,
+            "validade": "2025-03-05",
+            "fornecedor_id": 3,
+            "codigo_barras": "1122334455667",
+            "preco_unitario": 3.00
+        }
+    ],
+    "entradas": [
+        {
+            "produto_id": 1,
+            "quantidade": 50,
+            "data": "2024-08-10",
+            "lote": "2024-01",
+            "preco_unitario": 24.00,
+            "fornecedor_id": 1
+        },
+        {
+            "produto_id": 2,
+            "quantidade": 30,
+            "data": "2024-08-12",
+            "lote": "2024-02",
+            "preco_unitario": 7.50,
+            "fornecedor_id": 2
+        },
+        {
+            "produto_id": 3,
+            "quantidade": 100,
+            "data": "2024-08-15",
+            "lote": "2024-03",
+            "preco_unitario": 4.00,
+            "fornecedor_id": 1
+        }
+    ],
+    "saidas": [
+        {
+            "produto_id": 1,
+            "quantidade": 10,
+            "data": "2024-08-11",
+            "destino": "Loja A",
+            "valor_unitario": 25.00,
+            "lote": "2024-01"
+        },
+        {
+            "produto_id": 2,
+            "quantidade": 5,
+            "data": "2024-08-13",
+            "destino": "Loja B",
+            "valor_unitario": 8.00,
+            "lote": "2024-02"
+        },
+        {
+            "produto_id": 3,
+            "quantidade": 20,
+            "data": "2024-08-14",
+            "destino": "Loja C",
+            "valor_unitario": 4.50,
+            "lote": "2024-03"
+        }
+    ],
+    "fornecedores": [
+        {
+            "id": 1,
+            "nome": "Fornecedor A",
+            "contato": "fornecedora@example.com",
+            "endereco": "Rua A, 123",
+            "telefone": "(11) 1234-5678"
+        },
+        {
+            "id": 2,
+            "nome": "Fornecedor B",
+            "contato": "fornecedorb@example.com",
+            "endereco": "Avenida B, 456",
+            "telefone": "(21) 9876-5432"
+        },
+        {
+            "id": 3,
+            "nome": "Fornecedor C",
+            "contato": "fornecedorc@example.com",
+            "endereco": "Praça C, 789",
+            "telefone": "(31) 6543-2109"
+        }
+    ]
+}
+```
+
+### 13. **Aplicativo de Agenda Pessoal**
+```json
+{
+    "eventos": [
+        {
+            "id": 1,
+            "titulo": "Reunião com cliente",
+            "data": "2024-08-15",
+            "hora": "10:00",
+            "descricao": "Reunião para discutir o projeto.",
+            "local": "Escritório Central",
+            "convidados": [
+                "cliente@example.com",
+                "colega@example.com"
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Consulta médica",
+            "data": "2024-08-16",
+            "hora": "14:00",
+            "descricao": "Consulta anual de check-up.",
+            "local": "Clínica
+
+ de Saúde",
+            "convidados": []
+        },
+        {
+            "id": 3,
+            "titulo": "Treinamento de equipe",
+            "data": "2024-08-20",
+            "hora": "09:00",
+            "descricao": "Treinamento sobre novas ferramentas.",
+            "local": "Sala de Reuniões 1",
+            "convidados": [
+                "equipe@example.com"
+            ]
+        }
+    ],
+    "lembretes": [
+        {
+            "id": 1,
+            "evento_id": 1,
+            "antecedencia": "30 minutos",
+            "notificado": false
+        },
+        {
+            "id": 2,
+            "evento_id": 2,
+            "antecedencia": "1 hora",
+            "notificado": false
+        },
+        {
+            "id": 3,
+            "evento_id": 3,
+            "antecedencia": "1 dia",
+            "notificado": false
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "João Silva",
+            "email": "joao.silva@example.com",
+            "eventos": [1, 2]
+        },
+        {
+            "id": 2,
+            "nome": "Maria Oliveira",
+            "email": "maria.oliveira@example.com",
+            "eventos": [3]
+        }
+    ]
+}
+```
+
+### 14. **Simulador de Jogo de Cartas (Ex: Poker, Blackjack)**
+```json
+{
+    "baralho": [
+        {"naipe": "copas", "valor": "A"},
+        {"naipe": "copas", "valor": "2"},
+        {"naipe": "copas", "valor": "3"},
+        {"naipe": "copas", "valor": "4"},
+        {"naipe": "copas", "valor": "5"},
+        {"naipe": "copas", "valor": "6"},
+        {"naipe": "copas", "valor": "7"},
+        {"naipe": "copas", "valor": "8"},
+        {"naipe": "copas", "valor": "9"},
+        {"naipe": "copas", "valor": "10"},
+        {"naipe": "copas", "valor": "J"},
+        {"naipe": "copas", "valor": "Q"},
+        {"naipe": "copas", "valor": "K"},
+        {"naipe": "espadas", "valor": "A"},
+        {"naipe": "espadas", "valor": "2"},
+        {"naipe": "espadas", "valor": "3"},
+        {"naipe": "espadas", "valor": "4"},
+        {"naipe": "espadas", "valor": "5"},
+        {"naipe": "espadas", "valor": "6"},
+        {"naipe": "espadas", "valor": "7"},
+        {"naipe": "espadas", "valor": "8"},
+        {"naipe": "espadas", "valor": "9"},
+        {"naipe": "espadas", "valor": "10"},
+        {"naipe": "espadas", "valor": "J"},
+        {"naipe": "espadas", "valor": "Q"},
+        {"naipe": "espadas", "valor": "K"},
+        {"naipe": "ouros", "valor": "A"},
+        {"naipe": "ouros", "valor": "2"},
+        {"naipe": "ouros", "valor": "3"},
+        {"naipe": "ouros", "valor": "4"},
+        {"naipe": "ouros", "valor": "5"},
+        {"naipe": "ouros", "valor": "6"},
+        {"naipe": "ouros", "valor": "7"},
+        {"naipe": "ouros", "valor": "8"},
+        {"naipe": "ouros", "valor": "9"},
+        {"naipe": "ouros", "valor": "10"},
+        {"naipe": "ouros", "valor": "J"},
+        {"naipe": "ouros", "valor": "Q"},
+        {"naipe": "ouros", "valor": "K"},
+        {"naipe": "paus", "valor": "A"},
+        {"naipe": "paus", "valor": "2"},
+        {"naipe": "paus", "valor": "3"},
+        {"naipe": "paus", "valor": "4"},
+        {"naipe": "paus", "valor": "5"},
+        {"naipe": "paus", "valor": "6"},
+        {"naipe": "paus", "valor": "7"},
+        {"naipe": "paus", "valor": "8"},
+        {"naipe": "paus", "valor": "9"},
+        {"naipe": "paus", "valor": "10"},
+        {"naipe": "paus", "valor": "J"},
+        {"naipe": "paus", "valor": "Q"},
+        {"naipe": "paus", "valor": "K"}
+    ],
+    "jogadores": [
+        {
+            "id": 1,
+            "nome": "Ricardo",
+            "mao": [
+                {"naipe": "copas", "valor": "A"},
+                {"naipe": "espadas", "valor": "K"}
+            ],
+            "saldo": 1000.00,
+            "aposta_atual": 50.00
+        },
+        {
+            "id": 2,
+            "nome": "Fernanda",
+            "mao": [
+                {"naipe": "ouros", "valor": "Q"},
+                {"naipe": "paus", "valor": "J"}
+            ],
+            "saldo": 1200.00,
+            "aposta_atual": 50.00
+        },
+        {
+            "id": 3,
+            "nome": "Carlos",
+            "mao": [
+                {"naipe": "copas", "valor": "10"},
+                {"naipe": "espadas", "valor": "9"}
+            ],
+            "saldo": 800.00,
+            "aposta_atual": 50.00
+        }
+    ],
+    "mesa": {
+        "cartas": [
+            {"naipe": "copas", "valor": "2"},
+            {"naipe": "ouros", "valor": "3"},
+            {"naipe": "paus", "valor": "4"},
+            {"naipe": "espadas", "valor": "5"},
+            {"naipe": "ouros", "valor": "6"}
+        ],
+        "aposta_total": 150.00
+    },
+    "historico_partidas": [
+        {
+            "id": 1,
+            "jogadores": ["Ricardo", "Fernanda", "Carlos"],
+            "vencedor": "Fernanda",
+            "valor_vitoria": 300.00,
+            "data_hora": "2024-08-10T20:30:00"
+        },
+        {
+            "id": 2,
+            "jogadores": ["Ricardo", "Fernanda"],
+            "vencedor": "Ricardo",
+            "valor_vitoria": 200.00,
+            "data_hora": "2024-08-11T21:00:00"
+        }
+    ]
+}
+```
+
+### 15. **Sistema de Cadastro de Veículos**
+```json
+{
+    "veiculos": [
+        {
+            "id": 1,
+            "tipo": "carro",
+            "marca": "Toyota",
+            "modelo": "Corolla",
+            "ano": 2020,
+            "placa": "ABC-1234",
+            "proprietario": {
+                "nome": "João da Silva",
+                "documento": "12345678900",
+                "endereco": "Rua A, 123"
+            }
+        },
+        {
+            "id": 2,
+            "tipo": "moto",
+            "marca": "Honda",
+            "modelo": "CBR",
+            "ano": 2019,
+            "placa": "XYZ-5678",
+            "proprietario": {
+                "nome": "Maria de Souza",
+                "documento": "98765432100",
+                "endereco": "Avenida B, 456"
+            }
+        },
+        {
+            "id": 3,
+            "tipo": "caminhao",
+            "marca": "Volvo",
+            "modelo": "FH",
+            "ano": 2018,
+            "placa": "RTY-3344",
+            "proprietario": {
+                "nome": "Carlos Pereira",
+                "documento": "19283746500",
+                "endereco": "Praça C, 789"
+            }
+        },
+        {
+            "id": 4,
+            "tipo": "carro",
+            "marca": "Ford",
+            "modelo": "Fusion",
+            "ano": 2021,
+            "placa": "QWE-1122",
+            "proprietario": {
+                "nome": "Ana Lima",
+                "documento": "00123456789",
+                "endereco": "Rua D, 321"
+            }
+        }
+    ],
+    "historico_transferencias": [
+        {
+            "veiculo_id": 1,
+            "vendedor": {
+                "nome": "José
+
+ Oliveira",
+                "documento": "11223344556",
+                "endereco": "Rua E, 654"
+            },
+            "comprador": {
+                "nome": "João da Silva",
+                "documento": "12345678900",
+                "endereco": "Rua A, 123"
+            },
+            "data": "2024-01-10",
+            "valor": 60000.00
+        },
+        {
+            "veiculo_id": 2,
+            "vendedor": {
+                "nome": "Paulo Ribeiro",
+                "documento": "22334455667",
+                "endereco": "Avenida F, 987"
+            },
+            "comprador": {
+                "nome": "Maria de Souza",
+                "documento": "98765432100",
+                "endereco": "Avenida B, 456"
+            },
+            "data": "2023-12-15",
+            "valor": 45000.00
+        }
+    ]
+}
+```
+
+### 16. **Sistema de Reserva de Passagens Aéreas**
+```json
+{
+    "voos": [
+        {
+            "numero_voo": "AB1234",
+            "origem": "São Paulo",
+            "destino": "Rio de Janeiro",
+            "hora_partida": "2024-08-20T10:00:00",
+            "hora_chegada": "2024-08-20T11:00:00",
+            "assentos_disponiveis": 50,
+            "aeronave": "Boeing 737",
+            "companhia_aerea": "Air Brazil"
+        },
+        {
+            "numero_voo": "CD5678",
+            "origem": "Brasília",
+            "destino": "Salvador",
+            "hora_partida": "2024-08-21T14:00:00",
+            "hora_chegada": "2024-08-21T16:00:00",
+            "assentos_disponiveis": 30,
+            "aeronave": "Airbus A320",
+            "companhia_aerea": "Sky Airlines"
+        },
+        {
+            "numero_voo": "EF9012",
+            "origem": "Recife",
+            "destino": "Fortaleza",
+            "hora_partida": "2024-08-22T08:00:00",
+            "hora_chegada": "2024-08-22T09:30:00",
+            "assentos_disponiveis": 20,
+            "aeronave": "Embraer E190",
+            "companhia_aerea": "Blue Wings"
+        }
+    ],
+    "reservas": [
+        {
+            "id": 1,
+            "passageiro": {
+                "nome": "José Carlos",
+                "documento": "12345678900",
+                "email": "jose.carlos@example.com",
+                "telefone": "(11) 91234-5678"
+            },
+            "numero_voo": "AB1234",
+            "assento": "12A",
+            "data_reserva": "2024-08-01",
+            "valor_passagem": 500.00,
+            "status": "confirmada"
+        },
+        {
+            "id": 2,
+            "passageiro": {
+                "nome": "Maria Aparecida",
+                "documento": "98765432100",
+                "email": "maria.aparecida@example.com",
+                "telefone": "(21) 98765-4321"
+            },
+            "numero_voo": "CD5678",
+            "assento": "8B",
+            "data_reserva": "2024-08-02",
+            "valor_passagem": 600.00,
+            "status": "confirmada"
+        },
+        {
+            "id": 3,
+            "passageiro": {
+                "nome": "Ana Lima",
+                "documento": "00123456789",
+                "email": "ana.lima@example.com",
+                "telefone": "(31) 99876-5432"
+            },
+            "numero_voo": "EF9012",
+            "assento": "5C",
+            "data_reserva": "2024-08-03",
+            "valor_passagem": 400.00,
+            "status": "pendente"
+        }
+    ],
+    "passageiros_frequentes": [
+        {
+            "nome": "José Carlos",
+            "documento": "12345678900",
+            "voos_acumulados": 10,
+            "milhas": 15000,
+            "nivel": "gold"
+        },
+        {
+            "nome": "Maria Aparecida",
+            "documento": "98765432100",
+            "voos_acumulados": 5,
+            "milhas": 8000,
+            "nivel": "silver"
+        }
+    ]
+}
+```
+
+### 17. **Simulador de Mercado Financeiro**
+```json
+{
+    "acoes": [
+        {
+            "ticker": "AAPL",
+            "empresa": "Apple Inc.",
+            "preco_atual": 150.00,
+            "quantidade_disponivel": 1000,
+            "variacao_dia": 1.2,
+            "volume": 500000
+        },
+        {
+            "ticker": "GOOGL",
+            "empresa": "Alphabet Inc.",
+            "preco_atual": 2800.00,
+            "quantidade_disponivel": 500,
+            "variacao_dia": -0.8,
+            "volume": 300000
+        },
+        {
+            "ticker": "AMZN",
+            "empresa": "Amazon Inc.",
+            "preco_atual": 3500.00,
+            "quantidade_disponivel": 800,
+            "variacao_dia": 2.0,
+            "volume": 600000
+        },
+        {
+            "ticker": "TSLA",
+            "empresa": "Tesla Inc.",
+            "preco_atual": 700.00,
+            "quantidade_disponivel": 1500,
+            "variacao_dia": -1.5,
+            "volume": 700000
+        }
+    ],
+    "contas": [
+        {
+            "id": 1,
+            "titular": "Roberto Farias",
+            "saldo": 50000.00,
+            "portifolio": [
+                {"ticker": "AAPL", "quantidade": 10},
+                {"ticker": "TSLA", "quantidade": 5}
+            ],
+            "historico_transacoes": [
+                {
+                    "ticker": "AAPL",
+                    "quantidade": 10,
+                    "tipo": "compra",
+                    "preco": 150.00,
+                    "data": "2024-08-11"
+                },
+                {
+                    "ticker": "TSLA",
+                    "quantidade": 5,
+                    "tipo": "compra",
+                    "preco": 700.00,
+                    "data": "2024-08-12"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "titular": "Sofia Mendes",
+            "saldo": 75000.00,
+            "portifolio": [
+                {"ticker": "GOOGL", "quantidade": 5},
+                {"ticker": "AMZN", "quantidade": 2}
+            ],
+            "historico_transacoes": [
+                {
+                    "ticker": "GOOGL",
+                    "quantidade": 5,
+                    "tipo": "venda",
+                    "preco": 2800.00,
+                    "data": "2024-08-10"
+                },
+                {
+                    "ticker": "AMZN",
+                    "quantidade": 2,
+                    "tipo": "compra",
+                    "preco": 3500.00,
+                    "data": "2024-08-12"
+                }
+            ]
+        }
+    ],
+    "transacoes": [
+        {
+            "conta_id": 1,
+            "ticker": "AAPL",
+            "quantidade": 10,
+            "tipo": "compra",
+            "preco": 150.00,
+            "data": "2024-08-11"
+        },
+        {
+            "conta_id": 2,
+            "ticker": "GOOGL",
+            "quantidade": 5,
+            "tipo": "venda",
+            "preco": 2800.00,
+            "data": "2024-08-10"
+        }
+    ]
+}
+```
+
+### 18. **Sistema de Gestão de Consultório Médico**
+```json
+{
+    "medicos": [
+        {
+            "id": 1,
+            "nome": "Dr. André",
+            "especialidade": "Cardiologia",
+            "crm": "123456-SP",
+            "horarios_atendimento": [
+                {"dia_semana": "segunda-feira", "horario_inicio": "08:00", "horario_fim": "12:00"},
+                {"dia_semana": "quarta-feira", "horario_inicio": "14:00", "horario_fim": "18:00"}
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Dra. Fernanda",
+            "especialidade": "Dermatologia",
+            "crm": "654321-RJ",
+            "horarios_atendimento": [
+                {"dia_semana": "terça-feira", "horario_inicio": "08:00", "horario_fim": "12:00"},
+
+
+                {"dia_semana": "quinta-feira", "horario_inicio": "14:00", "horario_fim": "18:00"}
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Dr. João",
+            "especialidade": "Pediatria",
+            "crm": "789012-MG",
+            "horarios_atendimento": [
+                {"dia_semana": "segunda-feira", "horario_inicio": "14:00", "horario_fim": "18:00"},
+                {"dia_semana": "quarta-feira", "horario_inicio": "08:00", "horario_fim": "12:00"}
+            ]
+        }
+    ],
+    "pacientes": [
+        {
+            "id": 1,
+            "nome": "Carlos Pereira",
+            "data_nascimento": "1990-05-20",
+            "historico_medico": [
+                {
+                    "data": "2024-07-10",
+                    "diagnostico": "Hipertensão",
+                    "medico_id": 1,
+                    "tratamento": "Uso contínuo de anti-hipertensivos"
+                },
+                {
+                    "data": "2024-08-05",
+                    "diagnostico": "Gripe",
+                    "medico_id": 3,
+                    "tratamento": "Repouso e hidratação"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Mariana Lima",
+            "data_nascimento": "1985-09-15",
+            "historico_medico": [
+                {
+                    "data": "2024-08-05",
+                    "diagnostico": "Alergia",
+                    "medico_id": 2,
+                    "tratamento": "Uso de antialérgicos"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Lucas Oliveira",
+            "data_nascimento": "2000-11-30",
+            "historico_medico": [
+                {
+                    "data": "2024-07-20",
+                    "diagnostico": "Asma",
+                    "medico_id": 1,
+                    "tratamento": "Inalação diária"
+                }
+            ]
+        }
+    ],
+    "consultas": [
+        {
+            "id": 1,
+            "paciente_id": 1,
+            "medico_id": 1,
+            "data": "2024-08-15",
+            "hora": "09:00",
+            "status": "confirmada"
+        },
+        {
+            "id": 2,
+            "paciente_id": 2,
+            "medico_id": 2,
+            "data": "2024-08-16",
+            "hora": "10:00",
+            "status": "confirmada"
+        },
+        {
+            "id": 3,
+            "paciente_id": 3,
+            "medico_id": 3,
+            "data": "2024-08-17",
+            "hora": "11:00",
+            "status": "pendente"
+        }
+    ],
+    "exames": [
+        {
+            "id": 1,
+            "paciente_id": 1,
+            "tipo_exame": "Eletrocardiograma",
+            "data_solicitacao": "2024-07-12",
+            "data_resultado": "2024-07-15",
+            "resultado": "Normal",
+            "medico_id": 1
+        },
+        {
+            "id": 2,
+            "paciente_id": 2,
+            "tipo_exame": "Teste alérgico",
+            "data_solicitacao": "2024-08-06",
+            "data_resultado": "2024-08-08",
+            "resultado": "Positivo para pólen",
+            "medico_id": 2
+        }
+    ]
+}
+```
+
+### 19. **Aplicativo de Lista de Tarefas com Prioridades**
+```json
+{
+    "tarefas": [
+        {
+            "id": 1,
+            "descricao": "Estudar para o exame de matemática",
+            "prioridade": "alta",
+            "concluida": false,
+            "data_limite": "2024-08-20",
+            "subtarefas": [
+                {"id": 1, "descricao": "Revisar álgebra", "concluida": false},
+                {"id": 2, "descricao": "Resolver exercícios", "concluida": false}
+            ]
+        },
+        {
+            "id": 2,
+            "descricao": "Comprar presentes de aniversário",
+            "prioridade": "média",
+            "concluida": true,
+            "data_limite": "2024-08-15",
+            "subtarefas": [
+                {"id": 3, "descricao": "Escolher presentes", "concluida": true},
+                {"id": 4, "descricao": "Comprar embrulho", "concluida": true}
+            ]
+        },
+        {
+            "id": 3,
+            "descricao": "Finalizar projeto de trabalho",
+            "prioridade": "alta",
+            "concluida": false,
+            "data_limite": "2024-08-25",
+            "subtarefas": [
+                {"id": 5, "descricao": "Escrever relatório final", "concluida": false},
+                {"id": 6, "descricao": "Preparar apresentação", "concluida": false}
+            ]
+        }
+    ],
+    "listas": [
+        {
+            "id": 1,
+            "nome": "Estudos",
+            "tarefas": [1, 3]
+        },
+        {
+            "id": 2,
+            "nome": "Compras",
+            "tarefas": [2]
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "João Silva",
+            "email": "joao.silva@example.com",
+            "listas": [1]
+        },
+        {
+            "id": 2,
+            "nome": "Maria Oliveira",
+            "email": "maria.oliveira@example.com",
+            "listas": [2]
+        }
+    ]
+}
+```
+
+### 20. **Sistema de Gestão de Aluguel de Carros**
+```json
+{
+    "clientes": [
+        {
+            "id": 1,
+            "nome": "Eduardo Silva",
+            "cnh": "123456789",
+            "endereco": "Rua A, 123",
+            "telefone": "(11) 91234-5678",
+            "email": "eduardo.silva@example.com",
+            "historico_locacoes": [
+                {
+                    "veiculo_id": 1,
+                    "data_inicio": "2024-07-01",
+                    "data_fim": "2024-07-10",
+                    "valor_total": 500.00
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Ana Paula Santos",
+            "cnh": "987654321",
+            "endereco": "Avenida B, 456",
+            "telefone": "(21) 98765-4321",
+            "email": "ana.santos@example.com",
+            "historico_locacoes": [
+                {
+                    "veiculo_id": 2,
+                    "data_inicio": "2024-06-15",
+                    "data_fim": "2024-06-20",
+                    "valor_total": 600.00
+                },
+                {
+                    "veiculo_id": 3,
+                    "data_inicio": "2024-08-01",
+                    "data_fim": "2024-08-05",
+                    "valor_total": 800.00
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Carlos Pereira",
+            "cnh": "192837465",
+            "endereco": "Praça C, 789",
+            "telefone": "(31) 99876-5432",
+            "email": "carlos.pereira@example.com",
+            "historico_locacoes": [
+                {
+                    "veiculo_id": 4,
+                    "data_inicio": "2024-07-20",
+                    "data_fim": "2024-07-25",
+                    "valor_total": 700.00
+                }
+            ]
+        }
+    ],
+    "veiculos": [
+        {
+            "id": 1,
+            "marca": "Fiat",
+            "modelo": "Uno",
+            "ano": 2021,
+            "disponivel": true,
+            "placa": "ABC-1234",
+            "valor_diaria": 50.00
+        },
+        {
+            "id": 2,
+            "marca": "Chevrolet",
+            "modelo": "Onix",
+            "ano": 2022,
+            "disponivel": false,
+            "placa": "XYZ-5678",
+            "valor_diaria": 60.00
+        },
+        {
+            "id": 3,
+            "marca": "Volkswagen",
+            "modelo": "Gol",
+            "ano": 2020,
+            "disponivel": true,
+            "placa": "QWE-1122",
+            "valor_diaria": 70.00
+        },
+        {
+            "id": 4,
+            "marca": "Ford",
+            "modelo": "Ka",
+            "ano": 2019,
+            "dis
+
+ponivel": false,
+            "placa": "RTY-3344",
+            "valor_diaria": 80.00
+        }
+    ],
+    "locacoes": [
+        {
+            "id": 1,
+            "cliente_id": 1,
+            "veiculo_id": 1,
+            "data_inicio": "2024-08-10",
+            "data_fim": "2024-08-15",
+            "valor_total": 250.00,
+            "status": "confirmada"
+        },
+        {
+            "id": 2,
+            "cliente_id": 2,
+            "veiculo_id": 3,
+            "data_inicio": "2024-08-05",
+            "data_fim": "2024-08-10",
+            "valor_total": 350.00,
+            "status": "confirmada"
+        },
+        {
+            "id": 3,
+            "cliente_id": 3,
+            "veiculo_id": 4,
+            "data_inicio": "2024-08-12",
+            "data_fim": "2024-08-18",
+            "valor_total": 480.00,
+            "status": "pendente"
+        }
+    ]
+}
+```
+
+### 21. **Sistema de Gestão de Projetos**
+```json
+{
+    "projetos": [
+        {
+            "id": 1,
+            "nome": "Desenvolvimento de Website",
+            "descricao": "Projeto para criar um novo website institucional.",
+            "status": "em andamento",
+            "data_inicio": "2024-06-01",
+            "data_fim_prevista": "2024-09-01",
+            "responsavel": {
+                "nome": "Lucas Martins",
+                "email": "lucas.martins@example.com"
+            },
+            "equipe": [
+                {"nome": "João Silva", "funcao": "Desenvolvedor"},
+                {"nome": "Maria Oliveira", "funcao": "Designer"}
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Sistema de CRM",
+            "descricao": "Implementação de um sistema de gerenciamento de relacionamento com clientes.",
+            "status": "concluído",
+            "data_inicio": "2024-03-01",
+            "data_fim_prevista": "2024-06-01",
+            "responsavel": {
+                "nome": "Ana Lima",
+                "email": "ana.lima@example.com"
+            },
+            "equipe": [
+                {"nome": "Carlos Pereira", "funcao": "Analista"},
+                {"nome": "Fernanda Souza", "funcao": "Desenvolvedor"}
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Aplicativo Mobile",
+            "descricao": "Desenvolvimento de um aplicativo mobile para o gerenciamento de tarefas.",
+            "status": "planejado",
+            "data_inicio": "2024-09-01",
+            "data_fim_prevista": "2024-12-01",
+            "responsavel": {
+                "nome": "Bruno Alves",
+                "email": "bruno.alves@example.com"
+            },
+            "equipe": [
+                {"nome": "Lucas Martins", "funcao": "Desenvolvedor"},
+                {"nome": "Joana Silva", "funcao": "UX Designer"}
+            ]
+        }
+    ],
+    "tarefas": [
+        {
+            "id": 1,
+            "projeto_id": 1,
+            "descricao": "Criar layout inicial",
+            "responsavel": "Designer",
+            "status": "concluída",
+            "data_inicio": "2024-06-05",
+            "data_fim": "2024-06-10"
+        },
+        {
+            "id": 2,
+            "projeto_id": 1,
+            "descricao": "Implementar backend",
+            "responsavel": "Desenvolvedor",
+            "status": "em andamento",
+            "data_inicio": "2024-06-15",
+            "data_fim": "2024-07-01"
+        },
+        {
+            "id": 3,
+            "projeto_id": 2,
+            "descricao": "Realizar testes",
+            "responsavel": "Analista",
+            "status": "concluída",
+            "data_inicio": "2024-05-01",
+            "data_fim": "2024-05-15"
+        }
+    ],
+    "equipes": [
+        {
+            "id": 1,
+            "nome": "Equipe Web",
+            "membros": [
+                {"nome": "João Silva", "funcao": "Desenvolvedor"},
+                {"nome": "Maria Oliveira", "funcao": "Designer"}
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Equipe CRM",
+            "membros": [
+                {"nome": "Carlos Pereira", "funcao": "Analista"},
+                {"nome": "Fernanda Souza", "funcao": "Desenvolvedor"}
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Equipe Mobile",
+            "membros": [
+                {"nome": "Bruno Alves", "funcao": "Desenvolvedor"},
+                {"nome": "Joana Silva", "funcao": "UX Designer"}
+            ]
+        }
+    ]
+}
+```
+
+### 22. **Simulador de Zoo**
+```json
+{
+    "animais": [
+        {
+            "id": 1,
+            "especie": "Leão",
+            "nome": "Simba",
+            "idade": 5,
+            "habitat": "Savana",
+            "dieta": "Carnívoro",
+            "tratamentos": [
+                {
+                    "tipo": "Vacinação",
+                    "data": "2024-01-10",
+                    "detalhes": "Vacina antirrábica"
+                },
+                {
+                    "tipo": "Exame de sangue",
+                    "data": "2024-06-15",
+                    "detalhes": "Exame periódico"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "especie": "Elefante",
+            "nome": "Dumbo",
+            "idade": 10,
+            "habitat": "Selva",
+            "dieta": "Herbívoro",
+            "tratamentos": [
+                {
+                    "tipo": "Exame dentário",
+                    "data": "2024-03-05",
+                    "detalhes": "Avaliação dos dentes"
+                },
+                {
+                    "tipo": "Vermifugação",
+                    "data": "2024-07-20",
+                    "detalhes": "Aplicação de vermífugo"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "especie": "Girafa",
+            "nome": "Melman",
+            "idade": 7,
+            "habitat": "Savana",
+            "dieta": "Herbívoro",
+            "tratamentos": [
+                {
+                    "tipo": "Exame oftalmológico",
+                    "data": "2024-02-15",
+                    "detalhes": "Verificação de visão"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "especie": "Tigre",
+            "nome": "Rajah",
+            "idade": 8,
+            "habitat": "Floresta",
+            "dieta": "Carnívoro",
+            "tratamentos": [
+                {
+                    "tipo": "Vacinação",
+                    "data": "2024-04-10",
+                    "detalhes": "Vacina antirrábica"
+                }
+            ]
+        }
+    ],
+    "habitats": [
+        {
+            "id": 1,
+            "nome": "Savana",
+            "temperatura": "quente",
+            "area": 5000,
+            "animais": [1, 3]
+        },
+        {
+            "id": 2,
+            "nome": "Selva",
+            "temperatura": "úmido",
+            "area": 6000,
+            "animais": [2]
+        },
+        {
+            "id": 3,
+            "nome": "Floresta",
+            "temperatura": "moderado",
+            "area": 4000,
+            "animais": [4]
+        }
+    ],
+    "tratadores": [
+        {
+            "id": 1,
+            "nome": "Carlos",
+            "especialidade": "Felinos",
+            "animais_responsaveis": [4]
+        },
+        {
+            "id": 2,
+            "nome": "Maria",
+            "especialidade": "Pachidermes",
+            "animais_responsaveis": [2]
+        },
+        {
+            "id": 3,
+            "nome": "José",
+            "especialidade": "Herbívoros",
+            "animais_responsaveis": [1, 3]
+        }
+    ],
+    "visitantes": [
+        {
+            "id": 1,
+            "nome": "João da Silva",
+            "data_visita": "2024-08-10",
+            "habitats_visitados": ["Savana", "Selva"],
+            "comentarios": "Ótima experiência, adorei ver o Simba!"
+        },
+        {
+            "id": 2,
+            "nome": "Maria Oliveira",
+            "data_visita": "2024-08-11",
+            "habitats_visitados": ["Fl

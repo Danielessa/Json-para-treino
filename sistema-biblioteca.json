@@ -1,0 +1,99 @@
+{
+    "livros": [
+        {
+            "id": 1,
+            "titulo": "Python para Iniciantes",
+            "autor": "John Doe",
+            "ano_publicacao": 2020,
+            "disponivel": true,
+            "genero": "Tecnologia",
+            "exemplares": 3
+        },
+        {
+            "id": 2,
+            "titulo": "Algoritmos Avançados",
+            "autor": "Jane Smith",
+            "ano_publicacao": 2018,
+            "disponivel": false,
+            "genero": "Tecnologia",
+            "exemplares": 2
+        },
+        {
+            "id": 3,
+            "titulo": "História do Brasil",
+            "autor": "Pedro Silva",
+            "ano_publicacao": 2015,
+            "disponivel": true,
+            "genero": "História",
+            "exemplares": 5
+        },
+        {
+            "id": 4,
+            "titulo": "Engenharia de Software",
+            "autor": "Andrew Tanenbaum",
+            "ano_publicacao": 2017,
+            "disponivel": false,
+            "genero": "Tecnologia",
+            "exemplares": 4
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Carlos Silva",
+            "tipo": "aluno",
+            "curso": "Engenharia de Computação",
+            "historico": [
+                {
+                    "livro_id": 2,
+                    "data_emprestimo": "2024-01-15",
+                    "data_devolucao": "2024-02-15"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "nome": "Ana Souza",
+            "tipo": "professor",
+            "departamento": "Ciência da Computação",
+            "historico": [
+                {
+                    "livro_id": 1,
+                    "data_emprestimo": "2024-03-01",
+                    "data_devolucao": "2024-04-01"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "nome": "Lucas Pereira",
+            "tipo": "aluno",
+            "curso": "História",
+            "historico": [
+                {
+                    "livro_id": 3,
+                    "data_emprestimo": "2024-06-10",
+                    "data_devolucao": "2024-07-10"
+                }
+            ]
+        }
+    ],
+    "emprestimos": [
+        {
+            "id": 1,
+            "livro_id": 1,
+            "usuario_id": 2,
+            "data_emprestimo": "2024-08-01",
+            "data_devolucao_prevista": "2024-09-01",
+            "data_devolucao": null
+        },
+        {
+            "id": 2,
+            "livro_id": 3,
+            "usuario_id": 3,
+            "data_emprestimo": "2024-07-10",
+            "data_devolucao_prevista": "2024-08-10",
+            "data_devolucao": "2024-08-08"
+        }
+    ]
+}

@@ -1,0 +1,72 @@
+{
+    "eventos": [
+        {
+            "id": 1,
+            "titulo": "Reunião com cliente",
+            "data": "2024-08-15",
+            "hora": "10:00",
+            "descricao": "Reunião para discutir o projeto.",
+            "local": "Escritório Central",
+            "convidados": [
+                "cliente@example.com",
+                "colega@example.com"
+            ]
+        },
+        {
+            "id": 2,
+            "titulo": "Consulta médica",
+            "data": "2024-08-16",
+            "hora": "14:00",
+            "descricao": "Consulta anual de check-up.",
+            "local": "Clínica
+
+ de Saúde",
+            "convidados": []
+        },
+        {
+            "id": 3,
+            "titulo": "Treinamento de equipe",
+            "data": "2024-08-20",
+            "hora": "09:00",
+            "descricao": "Treinamento sobre novas ferramentas.",
+            "local": "Sala de Reuniões 1",
+            "convidados": [
+                "equipe@example.com"
+            ]
+        }
+    ],
+    "lembretes": [
+        {
+            "id": 1,
+            "evento_id": 1,
+            "antecedencia": "30 minutos",
+            "notificado": false
+        },
+        {
+            "id": 2,
+            "evento_id": 2,
+            "antecedencia": "1 hora",
+            "notificado": false
+        },
+        {
+            "id": 3,
+            "evento_id": 3,
+            "antecedencia": "1 dia",
+            "notificado": false
+        }
+    ],
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "João Silva",
+            "email": "joao.silva@example.com",
+            "eventos": [1, 2]
+        },
+        {
+            "id": 2,
+            "nome": "Maria Oliveira",
+            "email": "maria.oliveira@example.com",
+            "eventos": [3]
+        }
+    ]
+}
